@@ -1,0 +1,16 @@
+{
+  "mysqld_sigkill_and_restart": true,
+  "committed_marker_preserved": true,
+  "saved_cases_preserved": true,
+  "http_unavailable_during_database_outage": true,
+  "no_local_storage_fallback": true,
+  "software": {
+    "mysql_server_version": "8.4.13 for Linux on x86_64 (MySQL Community Server - GPL)",
+    "jdbc_sha256": "cef70caf532833c9ab8f41f74773ce22c08bf503fad215c9c2ee1e9db87e759e"
+  },
+  "power_loss_tested": false,
+  "backup_restore_tested": true,
+  "production_ready": false,
+  "backup_restore_kind": "FRAMED_ISOLATED_ONLY",
+  "production_restore_reconciled": false
+}

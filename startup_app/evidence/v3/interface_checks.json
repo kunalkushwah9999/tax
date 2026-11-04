@@ -1,0 +1,21 @@
+{
+  "version": "3.0.0",
+  "literal_html_ids_present": true,
+  "duplicate_html_ids": false,
+  "javascript_syntax_checked": true,
+  "authenticated_browser_flows_tested": true,
+  "browser_storage_profile": "mysql-concurrent",
+  "browser_checks_passed": 22,
+  "desktop_and_mobile_views_visually_inspected": true,
+  "mobile_viewport_tested": true,
+  "physical_mobile_device_tested": false,
+  "safari_webkit_tested": false,
+  "accessibility_audit": false,
+  "assets_sha256": {
+    "app.js": "9863ba3575e2eb2dd4b025e503e3abe3f30b0349fec607586c50f052d7489f86",
+    "index.html": "9cfd258845bb4aabd33d40b614048e39aefdc8fd04d7ef369dc20ed5e1b43ee9",
+    "styles.css": "71854d41325c76be683e672df55f5b9a81190a948d171addc090f4bf868ea35f"
+  },
+  "jar_sha256": "1913ca1bef605df9483c13e7aada6edc77833bafaf84c2139222fe783f631e77",
+  "production_ready": false
+}

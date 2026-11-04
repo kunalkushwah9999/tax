@@ -1,0 +1,57 @@
+{
+  "module": "LISTED_EQUITY_REVIEW_0_1",
+  "period": "ITA1961-FY2025-26-AY2026-27",
+  "legal_review": "PENDING",
+  "public_release_authorized": false,
+  "checked_on": "2026-11-03",
+  "references": [
+    {
+      "id": "S111A_2025",
+      "url": "https://www.incometaxindia.gov.in/w/section-111a-22",
+      "observed": "Indexed primary 2025 text; direct page fetch was restricted",
+      "use": "Candidate special-rate short-term component and transfer-STT condition"
+    },
+    {
+      "id": "S112A_2025",
+      "url": "https://www.incometaxindia.gov.in/w/section-112a-60",
+      "observed": "Primary 2025 statutory page read",
+      "use": "Candidate long-term rate band and equity acquisition/transfer STT conditions"
+    },
+    {
+      "id": "S55_2025",
+      "url": "https://wmstatic-prd.incometaxindia.gov.in/web/guest/w/section-55-64",
+      "observed": "Indexed primary 2025 text; direct fetch restricted",
+      "use": "Cost-basis reference for pre-February-2018 acquisition"
+    },
+    {
+      "id": "S55_MEMO",
+      "url": "https://www.incometaxindia.gov.in/documents/20117/6476327/memo-2024.pdf/dc2c9c06-4718-c0de-c1ba-e9d9f125ed0c",
+      "observed": "Primary memorandum formula retrieved through search",
+      "use": "Actual cost versus capped FMV formula; not an independent utility result"
+    },
+    {
+      "id": "S70_2025",
+      "url": "https://www.incometaxindia.gov.in/w/section-70-64",
+      "observed": "Primary 2025 statutory text retrieved",
+      "use": "Current-year short/long loss set-off directions"
+    },
+    {
+      "id": "HOLDING_GUIDE",
+      "url": "https://www.incometaxindia.gov.in/w/capital-gain",
+      "observed": "Primary departmental guidance retrieved",
+      "use": "Listed-equity holding classification; exact anniversaries remain blocked"
+    },
+    {
+      "id": "ITR2_AY2026",
+      "url": "https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/itr-2/itr-2-faqs",
+      "observed": "Primary AY2026-27 guidance retrieved",
+      "use": "New-regime ordinary basic-exemption boundary; no annual rebate calculation in this module"
+    }
+  ],
+  "not_evidence_of": [
+    "Independent approval",
+    "Official utility execution",
+    "Full capital-gains or ITR/GST support",
+    "Income-tax Act 2025 tax-year 2026-27 support"
+  ]
+}

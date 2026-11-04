@@ -1,0 +1,143 @@
+{
+  "scope": "Finite abstract protocol only; no tax arithmetic or production DB proof.",
+  "python_version": "3.12.14",
+  "bounds": {
+    "attempt_ids": [
+      "A",
+      "B"
+    ],
+    "maximum_fact_edits": 2,
+    "replacement_policy_epochs": 1,
+    "actions": [
+      "start_A",
+      "start_B",
+      "finish_A",
+      "finish_B",
+      "mismatch_A",
+      "mismatch_B",
+      "expire_A",
+      "expire_B",
+      "edit_facts",
+      "publish_policy",
+      "revoke_rule",
+      "revoke_access",
+      "delete_case"
+    ]
+  },
+  "correct_model": {
+    "model": "correct_reference",
+    "status": "FINITE_DOMAIN_CHECK_PASSED",
+    "states_checked": 10016,
+    "transitions_checked": 22558,
+    "maximum_shortest_trace_length": 10
+  },
+  "injected_defects_detected": 8,
+  "injected_defects": [
+    {
+      "model": "read_ignores_snapshot",
+      "status": "COUNTEREXAMPLE",
+      "states_discovered": 39,
+      "transitions_checked": 47,
+      "trace": [
+        "start_A",
+        "finish_A",
+        "edit_facts"
+      ],
+      "violation": "stale facts delivered as current"
+    },
+    {
+      "model": "read_ignores_access",
+      "status": "COUNTEREXAMPLE",
+      "states_discovered": 42,
+      "transitions_checked": 50,
+      "trace": [
+        "start_A",
+        "finish_A",
+        "revoke_access"
+      ],
+      "violation": "result delivered after access revoked"
+    },
+    {
+      "model": "read_ignores_rule",
+      "status": "COUNTEREXAMPLE",
+      "states_discovered": 41,
+      "transitions_checked": 49,
+      "trace": [
+        "start_A",
+        "finish_A",
+        "revoke_rule"
+      ],
+      "violation": "result delivered under revoked rule"
+    },
+    {
+      "model": "read_ignores_policy",
+      "status": "COUNTEREXAMPLE",
+      "states_discovered": 40,
+      "transitions_checked": 48,
+      "trace": [
+        "start_A",
+        "finish_A",
+        "publish_policy"
+      ],
+      "violation": "old validation policy delivered as current"
+    },
+    {
+      "model": "read_ignores_quarantine",
+      "status": "COUNTEREXAMPLE",
+      "states_discovered": 146,
+      "transitions_checked": 202,
+      "trace": [
+        "start_A",
+        "finish_A",
+        "start_B",
+        "mismatch_B"
+      ],
+      "violation": "quarantined calculation delivered from cache"
+    },
+    {
+      "model": "finish_ignores_snapshot",
+      "status": "COUNTEREXAMPLE",
+      "states_discovered": 55,
+      "transitions_checked": 63,
+      "trace": [
+        "start_A",
+        "edit_facts",
+        "finish_A"
+      ],
+      "violation": "stale facts promoted"
+    },
+    {
+      "model": "accept_late_worker",
+      "status": "COUNTEREXAMPLE",
+      "states_discovered": 50,
+      "transitions_checked": 58,
+      "trace": [
+        "start_A",
+        "expire_A",
+        "finish_A"
+      ],
+      "violation": "terminal worker promoted a result"
+    },
+    {
+      "model": "reaper_clears_other_attempt",
+      "status": "COUNTEREXAMPLE",
+      "states_discovered": 179,
+      "transitions_checked": 251,
+      "trace": [
+        "start_A",
+        "expire_A",
+        "start_B",
+        "expire_A"
+      ],
+      "violation": "duplicate reaper cleared a newer active attempt"
+    }
+  ],
+  "limitations": [
+    "Steps are atomic. Real DB isolation, statement ordering and network boundaries are not modelled.",
+    "No proof of unbounded concurrency, timing, liveness or production availability.",
+    "Verifier outcomes are inputs. No tax correctness, legal eligibility or CA approval is tested.",
+    "Revocation applies at a read decision. Already downloaded bytes cannot be recalled.",
+    "A second run can represent an explicit audit, not a reason to remove logical request deduplication.",
+    "Deletion is abstract access denial; legal retention and actual storage erasure are outside this model."
+  ]
+}

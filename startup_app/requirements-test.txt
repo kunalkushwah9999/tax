@@ -1,0 +1,2 @@
+# Optional TEST harness only; the Java server has no Python commerce dependency.
+cryptography==50.0.2

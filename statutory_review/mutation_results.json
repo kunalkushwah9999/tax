@@ -1,0 +1,54 @@
+{
+  "injected_defects": 10,
+  "detected_defects": 10,
+  "variants": [
+    {
+      "defect": "st_rate_15_percent",
+      "detected": true
+    },
+    {
+      "defect": "lt_rate_10_percent",
+      "detected": true
+    },
+    {
+      "defect": "double_annual_band",
+      "detected": true
+    },
+    {
+      "defect": "skip_st_loss_cross_setoff",
+      "detected": true
+    },
+    {
+      "defect": "lt_loss_reduces_st",
+      "detected": true
+    },
+    {
+      "defect": "grandfather_lowers_actual_cost",
+      "detected": true
+    },
+    {
+      "defect": "ignore_holding_anniversary",
+      "detected": true
+    },
+    {
+      "defect": "unknown_amount_becomes_zero",
+      "detected": true
+    },
+    {
+      "defect": "skip_pan_alias_rejection",
+      "detected": true
+    },
+    {
+      "defect": "grant_filing_authority",
+      "detected": true
+    }
+  ],
+  "original_sources_preserved": true,
+  "tax_law_approved": false,
+  "independent_approved_cases": 0,
+  "sources": {
+    "equity.py": "59976ff448a9586be0d5a586eabafad38da5fddb54f413a80b85c073a3078801",
+    "test_equity.py": "243da438d388de52d93421818e1d3e79bcce749dc44dd7182f8c3d50f7fe4cf0",
+    "check_mutations.py": "f1746bf8fd12588027018fab11b78e2c9770c0e22306bee011495d370860dac7"
+  }
+}

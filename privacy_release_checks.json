@@ -1,0 +1,211 @@
+{
+  "version": "5.1.0",
+  "jar_sha256": "2149851f938c3f3c643208a6403b2d7fa93b2769421642f9490f5c00463de8cf",
+  "privacy_unit_groups": 15,
+  "privacy_http": {
+    "local": {
+      "privacy_http_groups": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 1,
+      "storage_profile": "local",
+      "actual_http": true,
+      "two_process_sql_tested": false,
+      "jar_sha256": "2149851f938c3f3c643208a6403b2d7fa93b2769421642f9490f5c00463de8cf",
+      "test_sources": {
+        "test_privacy.py": "34902e085972219049680b59c1e64c44fdb46888d3190e5823b019d83fec248e"
+      },
+      "production_privacy_approved": false,
+      "production_ready": false
+    },
+    "mysql": {
+      "privacy_http_groups": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "storage_profile": "mysql",
+      "actual_http": true,
+      "two_process_sql_tested": true,
+      "jar_sha256": "2149851f938c3f3c643208a6403b2d7fa93b2769421642f9490f5c00463de8cf",
+      "test_sources": {
+        "test_privacy.py": "34902e085972219049680b59c1e64c44fdb46888d3190e5823b019d83fec248e"
+      },
+      "production_privacy_approved": false,
+      "production_ready": false
+    },
+    "mysql_concurrent": {
+      "privacy_http_groups": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "storage_profile": "mysql-concurrent",
+      "actual_http": true,
+      "two_process_sql_tested": true,
+      "jar_sha256": "2149851f938c3f3c643208a6403b2d7fa93b2769421642f9490f5c00463de8cf",
+      "test_sources": {
+        "test_privacy.py": "34902e085972219049680b59c1e64c44fdb46888d3190e5823b019d83fec248e"
+      },
+      "production_privacy_approved": false,
+      "production_ready": false
+    }
+  },
+  "full_browser": {
+    "browser_checks_passed": 41,
+    "checks": [
+      "landing and keyboard sign-in focus",
+      "customer registration through browser",
+      "create and reopen saved draft",
+      "amount proposal and separate confirmation",
+      "profile save retains explicit review intent",
+      "source CSV comparison renders gross and TDS separately",
+      "ITR scope declarations save without releasing tax",
+      "optional native ITR check produces masked proposals",
+      "native category replacement remains estimated",
+      "GST worksheet comparison keeps eligibility undetermined",
+      "capital ledger import shows FIFO allocations with no taxable gain",
+      "capital bookkeeping review is separate and displays reviewed difference",
+      "negative sub-rupee book difference keeps its sign",
+      "TDS comparison renders mismatch without claiming credit",
+      "TDS mismatch review records follow-up without erasing mismatch",
+      "notice draft saves user-stated dates and renders markup as text",
+      "notice receipt remains a user report and does not become verified filing",
+      "working-paper download preserves private records without tax authority",
+      "structured feedback is saved with safe text rendering",
+      "signed TEST expert request grants scoped review",
+      "test checkout order through browser preserves frozen price",
+      "provider webhook reconciles paid access in browser",
+      "paid preparation bundle downloads without filing authority",
+      "desktop layout and screenshot",
+      "preparer accepts test review and reads shared case only",
+      "admin triages feedback through browser",
+      "admin test plan publication and aggregate feedback signals",
+      "customer sees triage reply after new sign-in",
+      "390px mobile viewport authenticated navigation and layout",
+      "390px capital and notice workbench layout remains usable",
+      "incorrect security password keeps the current security screen",
+      "authenticator enrollment starts without granting MFA",
+      "separate RFC TOTP proof enables MFA and displays recovery codes once",
+      "password-only MFA sign-in stays on a verification screen",
+      "unused recovery code completes browser sign-in",
+      "recovery-code regeneration replaces the one-time displayed set",
+      "revoke-other-devices rotates the current browser session",
+      "password change through browser requires password and second factor",
+      "new password and unused factor open the existing account",
+      "MFA removal requires a fresh authenticated proof",
+      "logout removes authenticated workspace"
+    ],
+    "js_errors": [],
+    "observed_api_errors": [
+      {
+        "path": "/api/security/update",
+        "status": 401
+      },
+      {
+        "path": "/api/cases",
+        "status": 401
+      }
+    ],
+    "browser_version": "156.0.8078.80",
+    "real_java_app": true,
+    "desktop_viewport": "1440x1000",
+    "mobile_viewport": "390x844",
+    "physical_mobile_device": false,
+    "full_accessibility_audit": false,
+    "real_payment_provider": false,
+    "real_ca_verification": false,
+    "production_ready": false,
+    "jar_sha256": "2149851f938c3f3c643208a6403b2d7fa93b2769421642f9490f5c00463de8cf",
+    "browser_binary_sha256": "d34f5d1962280380a576c40cd50139f11d0ed0cfb17f69dad37e8cc8fd2b73fa",
+    "playwright_version": "1.62.1",
+    "storage_profile": "mysql-concurrent",
+    "test_sources": {
+      "test_browser.py": "cad544505fdb262b1ecf2d6f732e27c932e120352a19415da6cf503ed58886db",
+      "browser_checks.mjs": "8deb96c76a6bda6830833c7cd2933ff9f1e424b0977438e40f89148f674ab37b",
+      "test_operations.py": "3743f39b57a0c82b4e5c017e9b0f4f0f566df485e25fed8828e64e45d82b3492",
+      "test_security.py": "17f3fab67ee1b672b45b1179506e3b2fd3829a8da5f95823d5ddc85a32688386"
+    }
+  },
+  "focused_web_browser": {
+    "browser_checks_passed": 14,
+    "checks": [
+      "served manifest and actual Java health",
+      "real service worker controls browser",
+      "authenticated login through generated front end",
+      "authenticated saved draft through UI",
+      "authenticated 390px layout",
+      "service worker does not weaken CSRF",
+      "Cache Storage contains only four public resources",
+      "signout completes online",
+      "offline navigation shows generic page without private draft",
+      "reconnect does not replay mutations",
+      "navigation locks an old security form until refreshed data renders",
+      "mobile customer can review active-data deletion",
+      "fresh proof removes active account through UI",
+      "external deletion page checks secret receipt without sign-in"
+    ],
+    "js_errors": [],
+    "chromium_version": "156.0.8078.80",
+    "viewport": "1440x1000 and 390x844",
+    "expected_api_error": {
+      "path": "/api/cases",
+      "status": 403
+    },
+    "runtime_jar_sha256": "2149851f938c3f3c643208a6403b2d7fa93b2769421642f9490f5c00463de8cf",
+    "test_fixture": "disposable TLS static proxy plus actual Java local storage",
+    "nginx_runtime_tested": false,
+    "android_runtime_tested": false,
+    "cloud_deployed": false,
+    "production_ready": false,
+    "sources": {
+      "release/browser_checks.mjs": "31fedfd4aefd36c5a13d4729141931a7bb8ed5cd1989c54fc19c4ab2f1c62b82",
+      "release/prepare.py": "57b55a76695491a879735ce43b4ba2ad9294a0ba03041b69fb187b0ae68b2632",
+      "release/templates/android/app/build.gradle": "6179e82dbee87e10a8d2c9704ae1ce203d9a08964973a227977ce8f42be934ae",
+      "release/templates/android/app/src/main/AndroidManifest.xml": "de9c430178d41178a8bfe1f6f2a40e35acb18c4f5fb51bd5f00156eee23c197f",
+      "release/templates/android/app/src/main/res/drawable/ic_launcher.xml": "c0a97e517b2a44621f47de6aa46707b6d335928e8391ad48bdf412901d5e3f99",
+      "release/templates/android/app/src/main/res/values/strings.xml": "cdbde8fdbd2adb9d59d4a948c1f620ed3ee4a412f6df61af69fb304c1796ef48",
+      "release/templates/android/build.gradle": "96a33edb21d173da2c36f5312f50cdfb9f71d9f5078c081c81f2d029547f6cb9",
+      "release/templates/android/settings.gradle": "6daa426830112ef55340f95ca972c698aa6976eafece2ad8372259c627ed9152",
+      "release/templates/cloud/nginx.conf": "510a43e815032b563aed8e87c47906fab7203c46d28ec17caeeb82c458c69b44",
+      "release/templates/cloud/taxdesk-proxy.conf": "d0b1bec592532a251841a1292fa4ed2981685202ee04eb7939575363ec67a62d",
+      "release/templates/web/install.css": "6124f29b0d219ce517727d94a077ca2bc7e109ea57608498ba976fee19b68d43",
+      "release/templates/web/install.js": "607262c4619ecb48e573686cfc8b6be80a9f6b2d6c0acbe5823d57528bbc9d78",
+      "release/templates/web/offline.css": "a1f5e4dfad3d030ae82749c41c9f4effaf0dde4ea8c8399aa0ee7a54fe8b243c",
+      "release/templates/web/offline.html": "155e862c7d83122fa3a98985631f241ea3ec482703e1d0e51ba3785bb02ecfd9",
+      "release/templates/web/sw.js": "7fda42aff322c22f22c2d64f57f727da8d9efa45f7e57eebd5ab000ed6e4737f",
+      "release/test_browser.py": "c23c24b9d8ae42f0ff955c9d4f1b850c632af44cef94722d8c503e986f5422e4",
+      "release/test_release.py": "8b86edbf6270bbfc02dafe9f2d53e11de03347774695fa1b18295085eb49f5ea",
+      "release/test_worker.mjs": "29a7be26017a554b03b7b0f750718bd9d773f78d2fc56394c6599a21595f7e0f"
+    }
+  },
+  "release_test_groups": 8,
+  "original_components_and_golden_unchanged": true,
+  "external_and_backup_erasure_confirmed": false,
+  "production_ready": false,
+  "independent_approved_tax_outputs": 0,
+  "synthetic_data_only": true,
+  "packaged_verification": {
+    "clean_extracted_verify": true,
+    "clean_extracted_doctor": true,
+    "clean_extracted_privacy_http_groups": 13,
+    "clean_extracted_privacy_expected_skip": 1,
+    "configured_public_support_link_checked": true,
+    "clean_extracted_release_test_groups": 8,
+    "clean_extracted_cli_generation": true,
+    "actual_packaged_helper_launch_health_bootstrap": true,
+    "production_command_blocked": true,
+    "without_rebuild": true,
+    "runtime_jar_sha256": "2149851f938c3f3c643208a6403b2d7fa93b2769421642f9490f5c00463de8cf",
+    "production_ready": false,
+    "tested_candidate_zip_sha256": "7e03bc8157bdebb24745b449ba480030849086577df842a446adbfc7866abfea",
+    "application_version": "5.1.0",
+    "delivery_tool_groups": 14,
+    "failures": 0,
+    "errors": 0,
+    "independent_approved_tax_outputs": 0,
+    "synthetic_data_only": true,
+    "new_sources": {
+      "manage.py": "c3ee06f0f4f1950207947e16d891667ff58f0f1da38d479c44519f52175032e6",
+      "test_manage.py": "25c018cb9bbae842bf02749407f74941ded51c721d509cc7be4e972610a62ba2"
+    }
+  }
+}

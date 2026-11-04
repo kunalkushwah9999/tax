@@ -1,0 +1,25 @@
+{
+  "clean_extracted_verify": true,
+  "clean_extracted_doctor": true,
+  "clean_extracted_privacy_http_groups": 13,
+  "clean_extracted_privacy_expected_skip": 1,
+  "configured_public_support_link_checked": true,
+  "clean_extracted_release_test_groups": 8,
+  "clean_extracted_cli_generation": true,
+  "actual_packaged_helper_launch_health_bootstrap": true,
+  "production_command_blocked": true,
+  "without_rebuild": true,
+  "runtime_jar_sha256": "2149851f938c3f3c643208a6403b2d7fa93b2769421642f9490f5c00463de8cf",
+  "production_ready": false,
+  "tested_candidate_zip_sha256": "7e03bc8157bdebb24745b449ba480030849086577df842a446adbfc7866abfea",
+  "application_version": "5.1.0",
+  "delivery_tool_groups": 14,
+  "failures": 0,
+  "errors": 0,
+  "independent_approved_tax_outputs": 0,
+  "synthetic_data_only": true,
+  "new_sources": {
+    "manage.py": "c3ee06f0f4f1950207947e16d891667ff58f0f1da38d479c44519f52175032e6",
+    "test_manage.py": "25c018cb9bbae842bf02749407f74941ded51c721d509cc7be4e972610a62ba2"
+  }
+}

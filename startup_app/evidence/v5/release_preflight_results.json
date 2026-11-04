@@ -1,0 +1,44 @@
+{
+  "engineering": {
+    "version": "5.0.0",
+    "mode": "engineering",
+    "engineering_checks_ok": true,
+    "engineering_issues": [],
+    "current_jar_sha256": "1548c778417a554434b1ea467c6cea162787f398e75ca2d7742838391e841feb",
+    "independent_approved_tax_outputs": 0,
+    "production_gates": {
+      "independent_tax_rule_release": false,
+      "full_itr_gst_capital_gains_coverage": false,
+      "authorized_live_filing": false,
+      "live_payment_commercial_release": false,
+      "verified_real_ca_service": false,
+      "production_infrastructure_and_security": false,
+      "measured_100000_user_capacity": false,
+      "production_restore_promotion": false
+    },
+    "production_ready": false,
+    "tax_or_filing_authority_created": false,
+    "synthetic_data_only": true
+  },
+  "production": {
+    "version": "5.0.0",
+    "mode": "production",
+    "engineering_checks_ok": true,
+    "engineering_issues": [],
+    "current_jar_sha256": "1548c778417a554434b1ea467c6cea162787f398e75ca2d7742838391e841feb",
+    "independent_approved_tax_outputs": 0,
+    "production_gates": {
+      "independent_tax_rule_release": false,
+      "full_itr_gst_capital_gains_coverage": false,
+      "authorized_live_filing": false,
+      "live_payment_commercial_release": false,
+      "verified_real_ca_service": false,
+      "production_infrastructure_and_security": false,
+      "measured_100000_user_capacity": false,
+      "production_restore_promotion": false
+    },
+    "production_ready": false,
+    "tax_or_filing_authority_created": false,
+    "synthetic_data_only": true
+  }
+}

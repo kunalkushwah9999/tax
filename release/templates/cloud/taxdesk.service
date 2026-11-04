@@ -1,0 +1,28 @@
+[Unit]
+Description=TaxDesk 5 synthetic SQL pilot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=taxdesk
+Group=taxdesk
+WorkingDirectory=/opt/taxdesk
+ExecStart=/usr/bin/java -Xmx256m --add-modules jdk.httpserver,java.sql -cp /opt/taxdesk/startup_app/build/@@JAR@@:/opt/taxdesk/vendor/mysql-connector-j-26.10.0.jar com.taxplatform.startup.Server --storage mysql-concurrent --mysql-config /etc/taxdesk/mysql-runtime.json --key /etc/taxdesk/record.key --public-origin @@ORIGIN@@ --port 8788
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=20
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+UMask=0077
+MemoryMax=512M
+LimitNOFILE=4096
+
+[Install]
+WantedBy=multi-user.target

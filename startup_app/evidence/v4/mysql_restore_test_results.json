@@ -1,0 +1,11 @@
+{
+  "real_launcher_backup_restore": true,
+  "actual_mysql_restore": true,
+  "restored_business_state_equal": true,
+  "mysql_restore_groups": 9,
+  "restore_isolation_enforced": true,
+  "deleted_or_revoked_snapshot_not_served": true,
+  "production_recovery_approved": false,
+  "current_deletion_revocation_reconciled": false,
+  "jar_sha256": "3c6fe5361f3ba61c9f73d05b130f7cb7bfa0df0b3a861a5f2d538a8f704b3688"
+}

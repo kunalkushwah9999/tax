@@ -1,0 +1,14 @@
+{
+  "equity_engineering_test_groups": 20,
+  "generated_paise_conservation_cases": 200,
+  "failures": 0,
+  "errors": 0,
+  "independent_approved_cases": 0,
+  "tax_rules_approved": false,
+  "public_result_release_authorized": false,
+  "filing_ready": false,
+  "sources": {
+    "equity.py": "59976ff448a9586be0d5a586eabafad38da5fddb54f413a80b85c073a3078801",
+    "test_equity.py": "243da438d388de52d93421818e1d3e79bcce749dc44dd7182f8c3d50f7fe4cf0"
+  }
+}

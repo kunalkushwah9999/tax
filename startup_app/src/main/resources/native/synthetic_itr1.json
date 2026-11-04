@@ -1,0 +1,162 @@
+{
+  "ITR": {
+    "ITR1": {
+      "CreationInfo": {
+        "SWVersionNo": "SYNTHETIC",
+        "SWCreatedBy": "SW00000000",
+        "JSONCreatedBy": "SW00000000",
+        "JSONCreationDate": "2026-07-01",
+        "IntermediaryCity": "SYNTHETIC",
+        "Digest": "-"
+      },
+      "Form_ITR1": {
+        "FormName": "ITR-1",
+        "Description": "SYNTHETIC STRUCTURAL FIXTURE - NOT A TAX-CORRECT RETURN",
+        "AssessmentYear": "2026",
+        "SchemaVer": "Ver1.0",
+        "FormVer": "Ver1.0"
+      },
+      "PersonalInfo": {
+        "AssesseeName": {
+          "SurNameOrOrgName": "SYNTHETIC ONLY"
+        },
+        "PAN": "ZZZZZ0000Z",
+        "Address": {
+          "ResidenceNo": "SYNTHETIC",
+          "LocalityOrArea": "SYNTHETIC",
+          "CityOrTownOrDistrict": "SYNTHETIC",
+          "StateCode": "18",
+          "CountryCode": "91",
+          "CountryCodeMobile": 91,
+          "MobileNo": 0,
+          "EmailAddress": "synthetic@example.invalid"
+        },
+        "SecondaryAdd": "N",
+        "DOB": "2000-01-01",
+        "EmployerCategory": "OTH"
+      },
+      "FilingStatus": {
+        "ReturnFileSec": 11,
+        "OptOutNewTaxRegime": "N",
+        "AsseseeRepFlg": "N",
+        "ItrFilingDueDate": "2026-07-31"
+      },
+      "ITR1_IncomeDeductions": {
+        "GrossSalary": 800000,
+        "NetSalary": 800000,
+        "DeductionUs16": 75000,
+        "IncomeFromSal": 725000,
+        "IncomeOthSrc": 12000,
+        "GrossTotIncome": 737000,
+        "GrossTotIncomeIncLTCG112A": 737000,
+        "UsrDeductUndChapVIA": {
+          "Section80C": 0,
+          "Section80CCC": 0,
+          "Section80CCDEmployeeOrSE": 0,
+          "Section80CCD1B": 0,
+          "Section80CCDEmployer": 0,
+          "Section80D": 0,
+          "Section80DD": 0,
+          "Section80DDB": 0,
+          "Section80E": 0,
+          "Section80EE": 0,
+          "Section80G": 0,
+          "Section80GG": 0,
+          "Section80GGA": 0,
+          "Section80GGC": 0,
+          "Section80U": 0,
+          "Section80TTA": 0,
+          "Section80TTB": 0,
+          "AnyOthSec80CCH": 0,
+          "TotalChapVIADeductions": 0
+        },
+        "DeductUndChapVIA": {
+          "Section80C": 0,
+          "Section80CCC": 0,
+          "Section80CCDEmployeeOrSE": 0,
+          "Section80CCD1B": 0,
+          "Section80CCDEmployer": 0,
+          "Section80D": 0,
+          "Section80DD": 0,
+          "Section80DDB": 0,
+          "Section80E": 0,
+          "Section80EE": 0,
+          "Section80EEA": 0,
+          "Section80EEB": 0,
+          "Section80G": 0,
+          "Section80GG": 0,
+          "Section80GGA": 0,
+          "Section80GGC": 0,
+          "Section80U": 0,
+          "Section80TTA": 0,
+          "Section80TTB": 0,
+          "AnyOthSec80CCH": 0,
+          "TotalChapVIADeductions": 0
+        },
+        "TotalIncome": 737000,
+        "OthersInc": {
+          "OthersIncDtlsOthSrc": [
+            {
+              "OthSrcNatureDesc": "SAV",
+              "OthSrcOthAmount": 5000
+            },
+            {
+              "OthSrcNatureDesc": "IFD",
+              "OthSrcOthAmount": 7000
+            }
+          ]
+        }
+      },
+      "ITR1_TaxComputation": {
+        "TotalTaxPayable": 0,
+        "Rebate87A": 0,
+        "TaxPayableOnRebate": 0,
+        "EducationCess": 0,
+        "GrossTaxLiability": 0,
+        "Section89": 0,
+        "NetTaxLiability": 0,
+        "TotalIntrstPay": 0,
+        "IntrstPay": {
+          "IntrstPayUs234A": 0,
+          "IntrstPayUs234B": 0,
+          "IntrstPayUs234C": 0,
+          "LateFilingFee234F": 0
+        },
+        "TotTaxPlusIntrstPay": 0
+      },
+      "TaxPaid": {
+        "TaxesPaid": {
+          "AdvanceTax": 0,
+          "TDS": 0,
+          "TCS": 0,
+          "SelfAssessmentTax": 0,
+          "TotalTaxesPaid": 0
+        },
+        "BalTaxPayable": 0
+      },
+      "Refund": {
+        "RefundDue": 0,
+        "BankAccountDtls": {
+          "AddtnlBankDetails": [
+            {
+              "IFSCCode": "TEST0000000",
+              "BankName": "SYNTHETIC ONLY BANK",
+              "BankAccountNo": "TESTACCOUNT1",
+              "AccountType": "SB",
+              "UseForRefund": "false"
+            }
+          ]
+        }
+      },
+      "Verification": {
+        "Declaration": {
+          "AssesseeVerName": "SYNTHETIC ONLY",
+          "FatherName": "SYNTHETIC ONLY",
+          "AssesseeVerPAN": "ZZZZZ0000Z"
+        },
+        "Capacity": "S",
+        "Place": "SYNTHETIC"
+      }
+    }
+  }
+}

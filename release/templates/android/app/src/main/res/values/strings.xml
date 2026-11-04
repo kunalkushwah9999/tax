@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TaxDesk Pilot</string>
+    <string name="asset_statements" translatable="false">@@ASSET_STATEMENTS@@</string>
+</resources>

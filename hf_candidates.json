@@ -1,0 +1,80 @@
+{
+  "reviewed_on": "2026-10-31",
+  "models": [
+    {
+      "repo_id": "Qwen/Qwen3-Embedding-0.6B",
+      "intended_role": "Retrieve relevant approved source passages",
+      "source_id": "H01",
+      "priority": "P2_AFTER_CORE",
+      "license_on_inspected_card": "Apache-2.0",
+      "revision_sha": null,
+      "artifact_sha256": null,
+      "inference_run": false,
+      "local_latency_ms": null,
+      "local_peak_ram_mb": null,
+      "domain_accuracy": null,
+      "production_approved": false,
+      "reason": "Candidate only. Pin artifact and pass domain, security, privacy and cost evaluations first."
+    },
+    {
+      "repo_id": "Qwen/Qwen3-Reranker-0.6B",
+      "intended_role": "Rank a small filtered retrieval candidate set",
+      "source_id": "H02",
+      "priority": "P2_AFTER_RETRIEVAL_BASELINE",
+      "license_on_inspected_card": "Apache-2.0",
+      "revision_sha": null,
+      "artifact_sha256": null,
+      "inference_run": false,
+      "local_latency_ms": null,
+      "local_peak_ram_mb": null,
+      "domain_accuracy": null,
+      "production_approved": false,
+      "reason": "Candidate only. Pin artifact and pass domain, security, privacy and cost evaluations first."
+    },
+    {
+      "repo_id": "PaddlePaddle/en_PP-OCRv5_mobile_rec",
+      "intended_role": "Recognize English text lines in scanned documents",
+      "source_id": "H03",
+      "priority": "P1_AFTER_DIGITAL_PDF_PARSER",
+      "license_on_inspected_card": "Apache-2.0",
+      "revision_sha": null,
+      "artifact_sha256": null,
+      "inference_run": false,
+      "local_latency_ms": null,
+      "local_peak_ram_mb": null,
+      "domain_accuracy": null,
+      "production_approved": false,
+      "reason": "Candidate only. Pin artifact and pass domain, security, privacy and cost evaluations first."
+    },
+    {
+      "repo_id": "PaddlePaddle/devanagari_PP-OCRv5_mobile_rec",
+      "intended_role": "Recognize Devanagari text lines",
+      "source_id": "H04",
+      "priority": "P1_IF_DOCUMENTS_REQUIRE_IT",
+      "license_on_inspected_card": "Apache-2.0",
+      "revision_sha": null,
+      "artifact_sha256": null,
+      "inference_run": false,
+      "local_latency_ms": null,
+      "local_peak_ram_mb": null,
+      "domain_accuracy": null,
+      "production_approved": false,
+      "reason": "Candidate only. Pin artifact and pass domain, security, privacy and cost evaluations first."
+    },
+    {
+      "repo_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "intended_role": "Optional constrained extraction and validated explanation",
+      "source_id": "H05",
+      "priority": "P2_OPTIONAL",
+      "license_on_inspected_card": "Apache-2.0",
+      "revision_sha": null,
+      "artifact_sha256": null,
+      "inference_run": false,
+      "local_latency_ms": null,
+      "local_peak_ram_mb": null,
+      "domain_accuracy": null,
+      "production_approved": false,
+      "reason": "Candidate only. Pin artifact and pass domain, security, privacy and cost evaluations first."
+    }
+  ]
+}

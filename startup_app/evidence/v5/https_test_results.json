@@ -1,0 +1,12 @@
+{
+  "https_proxy_groups": 13,
+  "failures": 0,
+  "errors": 0,
+  "actual_tls_and_authenticated_http": true,
+  "secure_host_cookie": true,
+  "client_uses_explicit_disposable_ca": true,
+  "nginx_runtime_tested": false,
+  "browser_transaction_flow_tested": false,
+  "jar_sha256": "1548c778417a554434b1ea467c6cea162787f398e75ca2d7742838391e841feb",
+  "production_deployed": false
+}

@@ -1,0 +1,24 @@
+# Operator template: service user, paths, secrets, database and TLS proxy must exist first.
+[Unit]
+Description=TaxDesk transactional pilot application
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=taxdesk
+Group=taxdesk
+WorkingDirectory=/opt/taxdesk
+ExecStart=/usr/bin/java -Xmx256m --add-modules jdk.httpserver,java.sql -cp /opt/taxdesk/startup_app/build/tax-platform-startup-5.1.0.jar:/opt/taxdesk/vendor/mysql-connector-j-26.10.0.jar com.taxplatform.startup.Server --storage mysql --mysql-config /etc/taxdesk/mysql-runtime.json --key /etc/taxdesk/record.key --public-origin https://YOUR_HOSTNAME --port 8788
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=20
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+UMask=0077
+MemoryMax=512M
+
+[Install]
+WantedBy=multi-user.target

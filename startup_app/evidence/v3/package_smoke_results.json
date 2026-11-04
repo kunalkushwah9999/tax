@@ -1,0 +1,13 @@
+{
+  "version": "3.0.0",
+  "packaged_launcher_started_without_rebuild": true,
+  "both_archive_manifests_verified": true,
+  "packaged_base_http_groups": 49,
+  "packaged_native_http_groups": 20,
+  "packaged_operations_http_groups": 35,
+  "packaged_new_payment_recovery_checks": true,
+  "packaged_encrypted_backup_and_verification": true,
+  "startup_jar_sha256": "1913ca1bef605df9483c13e7aada6edc77833bafaf84c2139222fe783f631e77",
+  "runtime_data_excluded": true,
+  "production_ready": false
+}

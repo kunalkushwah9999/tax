@@ -1,0 +1,4 @@
+
+# Generated build outputs
+**/build/
+*.jar

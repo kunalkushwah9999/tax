@@ -1,0 +1,9 @@
+{
+  "extracted_doctor": true,
+  "engineering_groups": 20,
+  "generated_cases": 200,
+  "detected_mutations": 10,
+  "private_cli_and_manifest_hash": true,
+  "additional_review_expectations_blank": true,
+  "production_ready": false
+}

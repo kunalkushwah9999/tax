@@ -1,0 +1,11 @@
+{
+  "certificate_identity_verified": true,
+  "mysql_version": "8.4.13",
+  "actual_mysql": true,
+  "jdbc_driver_version": "mysql-connector-j-26.10.0 (Revision: fac9201148ebe3f84a5754cb86ebbacaf1cdce7f)",
+  "sql_concurrent_distinct_writer_rounds": 4,
+  "production_ready": false,
+  "concurrent_mysql_named_groups": 26,
+  "jar_sha256": "3c6fe5361f3ba61c9f73d05b130f7cb7bfa0df0b3a861a5f2d538a8f704b3688",
+  "executed_in_release": "4.0.0"
+}

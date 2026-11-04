@@ -1,0 +1,15 @@
+runtime-data/
+build/classes/
+build/dependency-classes/
+build/test-classes/
+__pycache__/
+*.pending
+vendor/
+*.private.json
+*.key
+*.p12
+*.txb
+backups/
+native-cache/
+.venv-native/
+runtime-native/

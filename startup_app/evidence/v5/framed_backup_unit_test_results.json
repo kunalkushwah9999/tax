@@ -1,0 +1,5 @@
+{
+  "production_recovery_approved": false,
+  "framed_backup_unit_groups": 8,
+  "real_mysql_tested_by_this_suite": false
+}

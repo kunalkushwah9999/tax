@@ -1,0 +1,54 @@
+{
+  "native_worker_defects": 6,
+  "native_worker_detected_defects": 6,
+  "source_preserved": true,
+  "inputs": {
+    "native_import/check_worker_mutations.py": "746c26e16042d7df9b4c659b36d6422b088bc93bd703174366c6642da89d1c97",
+    "native_import/fetch_sources.py": "cd3950d53bc702082abfd95d9f1ca81c7601b2a3af3dda2dae2b9c794963c016",
+    "native_import/test_worker.py": "f2980f0380f020cccfcc419bebbd0d47e07445092aba66ff52a46c78f25126f8",
+    "native_import/worker.py": "30f22b417eaa2bcc5b5fae62b0bab0ef01c49e8d5c5c16b302cd4a8bb7a61844",
+    "native_import/source_pins.json": "91ad5404006b9a827504766c1437590f0e613b068a185371e7db3516ae6b8651",
+    "native_import/requirements.txt": "87ad101e30f6dd0eda02992ad57331511f4e279eb6eaadf0ba1d5814685d8cfa",
+    "src/main/resources/native/synthetic_itr1.json": "526a0e72ad6339348ccf21270a9a99405003d235eb058df247d09f3f3cd3fa16"
+  },
+  "schema_sha256": "6a0ef9f64065431879dcc724869d8455a640bcf11279d1818eb19f11448ce763",
+  "variants": [
+    {
+      "name": "official_schema_errors_ignored",
+      "syntax_valid": true,
+      "targeted_assertion_failed": true,
+      "test": "test_21_invalid_unused_tax_field_still_blocks_all_proposals"
+    },
+    {
+      "name": "exact_form_version_check_ignored",
+      "syntax_valid": true,
+      "targeted_assertion_failed": true,
+      "test": "test_04_pattern_substring_acceptance_does_not_expand_form_identity"
+    },
+    {
+      "name": "multiple_category_rows_silently_select_first",
+      "syntax_valid": true,
+      "targeted_assertion_failed": true,
+      "test": "test_10_multiple_category_observations_are_never_summed_into_proposal"
+    },
+    {
+      "name": "raw_identity_document_echoed",
+      "syntax_valid": true,
+      "targeted_assertion_failed": true,
+      "test": "test_15_identity_bank_contact_and_unexpected_field_names_never_escape"
+    },
+    {
+      "name": "schema_integrity_pin_disabled",
+      "syntax_valid": true,
+      "targeted_assertion_failed": true,
+      "test": "test_18_corrupt_schema_pin_fails_before_document_validation"
+    },
+    {
+      "name": "tax_arithmetic_marked_as_checked",
+      "syntax_valid": true,
+      "targeted_assertion_failed": true,
+      "test": "test_14_tax_figures_are_neither_trusted_returned_nor_used_as_expectations"
+    }
+  ],
+  "independent_tax_approval": false
+}

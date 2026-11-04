@@ -1,0 +1,9 @@
+{
+  "host": "YOUR_DATABASE_CERTIFICATE_HOSTNAME",
+  "port": 3306,
+  "database": "taxdesk",
+  "user": "taxdesk_app",
+  "password": "REPLACE_WITH_RUNTIME_ACCOUNT_SECRET",
+  "trust_store": "/etc/taxdesk/mysql-ca.p12",
+  "trust_store_password": "REPLACE_WITH_TRUST_STORE_SECRET"
+}

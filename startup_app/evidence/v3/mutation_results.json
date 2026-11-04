@@ -1,0 +1,74 @@
+{
+  "startup_compiled_mutants": 6,
+  "startup_detected_mutants": 6,
+  "source_preserved": true,
+  "inputs": {
+    "src/main/java/com/taxplatform/localdemo/StartupAdapter.java": "9196f4ab2caf5ed16dce444e490609574385096e3306e48577ff711eef41c8da",
+    "src/main/java/com/taxplatform/startup/Capacity.java": "d71c90f954f3beb9f19a1063404ccb69ae9d64838ac88deb5e2d344dc36315ad",
+    "src/main/java/com/taxplatform/startup/ConcurrentMysqlStore.java": "b89ff0f9937f73606f85a7ec35094cb927779c72e0df2a70217be65925e09ab3",
+    "src/main/java/com/taxplatform/startup/Crypto.java": "9278d9f6f12822d49da6ef787e3807df608e5262b634d0b8ae48d1af81bc81fc",
+    "src/main/java/com/taxplatform/startup/DataStore.java": "98c48361a8fe9492f16f2532f6442ca9ccce3d84f8bb67796fde01aaae0f72f4",
+    "src/main/java/com/taxplatform/startup/FramedBackup.java": "5d1d5bb05873b0f0e62e4f26853e13e95ac6b3ed35a07ece774e079dd38d6d83",
+    "src/main/java/com/taxplatform/startup/GstReconciliation.java": "17b9feeeb5927efb11991974b4d52872385a546ba2eed4620f3699edc5186fcf",
+    "src/main/java/com/taxplatform/startup/Json.java": "fab434545f00cad13bc8b5f279d2e2204545e394376f8f5477e7ee209ddaa039",
+    "src/main/java/com/taxplatform/startup/MysqlStore.java": "683256f30362fc7f3f0060274e11fd955304b4bab5972e0ab6171b6f7899e2f1",
+    "src/main/java/com/taxplatform/startup/NativeImports.java": "e4a18d96ae80dea56e49f47726cb2d58bb7ed168a55eb7fc0c242d1a40515933",
+    "src/main/java/com/taxplatform/startup/PaymentGateway.java": "20d60020ab363e2897471a253165f80c7988da21d8d107d961743c79e88d4582",
+    "src/main/java/com/taxplatform/startup/ProfessionalRegistry.java": "aa0dee8a7e184a4bf6f1bd225d77cdfe1ce8fb55567b757ce44b5c672d6e4a47",
+    "src/main/java/com/taxplatform/startup/PublicEndpoint.java": "97db2325f46115eaec9aafb0efc253479d94a428577f5599b380eb51d771da93",
+    "src/main/java/com/taxplatform/startup/RecordCrypto.java": "bb63eae3863f5d139a584584cc28231fc2a5539b66c1b2f6bbae5027e9394be3",
+    "src/main/java/com/taxplatform/startup/RecoveryArchive.java": "e2129bcc93ae471227689aa17de20976b91f61d49759f810ddcbefdc2f366440",
+    "src/main/java/com/taxplatform/startup/SelfServicePreparation.java": "05e84f069101d7dcae26ce287ccf697dc60b6d81acb91bf6a895360ca716f33d",
+    "src/main/java/com/taxplatform/startup/Server.java": "34b9bc2e9f71754a9a785373608703d0dc9c09e061ab55fdb54bacfc5fa459f1",
+    "src/main/java/com/taxplatform/startup/SqlConfig.java": "f0c7eac001d6ba588410970d69eb0463e2394fa293bd7911bbeb779b3aff1643",
+    "src/main/java/com/taxplatform/startup/StartupOperations.java": "37dc82756c8ae0a25b816a254c2f3d75ada0f0a7774272d17b78c06976a62596",
+    "src/main/java/com/taxplatform/startup/VaultStore.java": "abbe82394930cb4ad6fe921311249b50600a614be976a5bdda946ebcc39d4a51",
+    "src/main/java/com/taxplatform/startup/Workspace.java": "4a5df77a1283f5c9564f813ba739f2aaadd798c9acddfc2b1c93e6181d427dc8",
+    "src/test/java/com/taxplatform/startup/ConcurrentMysqlRecoveryProbe.java": "fb76086327f413cfaee20ce3687ad60ee9f5377b9a383ae15994474caef5cecd",
+    "src/test/java/com/taxplatform/startup/ConcurrentMysqlTests.java": "703d64253267e0f9e697efe984dc10ecf9232ea04889b7020e18faf45341cf52",
+    "src/test/java/com/taxplatform/startup/ConcurrentRecoveryTests.java": "7166001ceb99fa541f27df4a048792b0ece77aaefb51a0655549d644f95a698f",
+    "src/test/java/com/taxplatform/startup/FramedBackupTests.java": "8d8574bb0b189e98c8077467cb97364bce9353f815cd38ab79dbd2e0be042f3e",
+    "src/test/java/com/taxplatform/startup/MysqlRecoveryProbe.java": "8d583117876bef53255667c85f9e91dbe2db2292690d21b52bce942dd41567f3",
+    "src/test/java/com/taxplatform/startup/MysqlRestoreTests.java": "eda67d4a42c97616d6352933c50614367cc9e5435e8d5ac2d87aedc34000922c",
+    "src/test/java/com/taxplatform/startup/MysqlTests.java": "5f9410f1f2fcc632e302dff0af73e56b04f6cb165997d641850d1452b18a1b6c",
+    "src/test/java/com/taxplatform/startup/NativeImportTests.java": "a8b71b302d6f3ce9c9b7892aa2695bfb608f7006f392d990e85c0fb3395fa19d",
+    "src/test/java/com/taxplatform/startup/NativeProcessTests.java": "ea7694dc095729feca0589c74c36350e9b115019ac4cdd8bdf563ae86c0c7c70",
+    "src/test/java/com/taxplatform/startup/RecoveryTests.java": "d5e5d076d2bb507d0f597f1a2e69ac4fbb0ac6332ab3d34175d0ca88b830aa88",
+    "src/test/java/com/taxplatform/startup/SelfServiceTests.java": "b8328b0f8c6b631667ea52f8920ba3ed21614d6dffca17bf11b3a961fa946ff1",
+    "src/test/java/com/taxplatform/startup/WorkspaceTests.java": "88c3516ba8f71438c0bc6dc1e65a6d0d89c9ac8f2d2b6ded109bea20625b0810"
+  },
+  "variants": [
+    {
+      "name": "private_case_owner_check_removed",
+      "compiled": true,
+      "behavioral_failure": true
+    },
+    {
+      "name": "revoked_preparation_access_still_allowed",
+      "compiled": true,
+      "behavioral_failure": true
+    },
+    {
+      "name": "stale_case_version_ignored",
+      "compiled": true,
+      "behavioral_failure": true
+    },
+    {
+      "name": "manual_proposal_auto_confirms",
+      "compiled": true,
+      "behavioral_failure": true
+    },
+    {
+      "name": "deleted_create_receipt_forgotten",
+      "compiled": true,
+      "behavioral_failure": true
+    },
+    {
+      "name": "new_price_rewrites_old_quotes",
+      "compiled": true,
+      "behavioral_failure": true
+    }
+  ],
+  "tax_validation": false,
+  "security_audit": false
+}

@@ -1,0 +1,2567 @@
+{
+  "schema_version": "golden-inputs-v0.1",
+  "prepared_on": "2026-10-31",
+  "purpose": "Independent CA/official-utility reference collection, not approved expected results.",
+  "release_status": "BLOCKED_PENDING_INDEPENDENT_EXPECTATIONS",
+  "approved_case_count": 0,
+  "case_count": 30,
+  "common_assumptions": [
+    "Synthetic adult individual cases only. No PAN, Aadhaar or personal documents.",
+    "Salary input is gross before standard deduction; all other salary adjustments explicitly screened absent.",
+    "All interest is gross before TDS. Eligible institution/type must be verified for 80TTA/80TTB.",
+    "No settlement/refund calculation is implied. Credits, filing dates, fees and interest require separate schedules.",
+    "ITA 1961 / FY 2025-26 / AY 2026-27 only. No automatic TY 2026-27 reuse.",
+    "Pre-filled engineering expectations are review hypotheses, not approved golden output."
+  ],
+  "cases": [
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "NEW",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "0.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "0.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G01",
+      "title": "Zero income",
+      "purpose": "Zero is a confirmed value; it is different from missing.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T01",
+        "T05",
+        "T06",
+        "T09"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "NEW",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "475000.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "0.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G02",
+      "title": "New slab at 4 lakh",
+      "purpose": "Inspect the slab-stage boundary even though rebate may make final tax zero.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T01",
+        "T05",
+        "T06",
+        "T09"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "NEW",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "875000.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "0.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G03",
+      "title": "New slab at 8 lakh",
+      "purpose": "Do not check only final zero; review slab tax and rebate separately.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T01",
+        "T05",
+        "T06",
+        "T09"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "NEW",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "1275000.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "0.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G04",
+      "title": "New rebate threshold",
+      "purpose": "Total income is 12 lakh after standard deduction.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T01",
+        "T05",
+        "T06",
+        "T09"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "NEW",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "1275004.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "0.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G05",
+      "title": "New rounding below threshold step",
+      "purpose": "Pre-round total income 1200004.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T01",
+        "T05",
+        "T06",
+        "T09"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "NEW",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "1275005.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "0.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G06",
+      "title": "New rounding at threshold step",
+      "purpose": "Pre-round total income 1200005.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T01",
+        "T05",
+        "T06",
+        "T09"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "NEW",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "1275010.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "0.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G07",
+      "title": "New just above threshold",
+      "purpose": "Rounded total income 1200010; apply marginal relief.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T01",
+        "T05",
+        "T06",
+        "T09"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "NEW",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "1285000.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "0.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G08",
+      "title": "New relief with cess",
+      "purpose": "Taxable 1210000; distinguish pre-cess relief from final tax.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T01",
+        "T05",
+        "T06",
+        "T09"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "NEW",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "1345580.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "0.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G09",
+      "title": "New relief near upper edge A",
+      "purpose": "Rounded taxable 1270580; evaluate relief from formula, not a rounded hardcoded cutoff.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T01",
+        "T05",
+        "T06",
+        "T09"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "NEW",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "1345590.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "0.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G10",
+      "title": "New relief near upper edge B",
+      "purpose": "Rounded taxable 1270590; pair with G09.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T01",
+        "T05",
+        "T06",
+        "T09"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "OLD",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "550000.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "0.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G11",
+      "title": "Old rebate threshold under 60",
+      "purpose": "Rounded taxable 500000 and confirmed nil deductions.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T15",
+        "T05",
+        "T06",
+        "T09"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "OLD",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "550005.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "0.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G12",
+      "title": "Old rounding at threshold step",
+      "purpose": "Pre-round taxable 500005; under-60 old rebate cliff.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T15",
+        "T05",
+        "T06",
+        "T09"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "OLD",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "550010.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "0.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G13",
+      "title": "Old just above threshold",
+      "purpose": "Rounded taxable 500010; no new-regime relief formula here.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T15",
+        "T05",
+        "T06",
+        "T09"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "NEW",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "50000.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "500000.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G14",
+      "title": "Low salary plus FD interest",
+      "purpose": "Standard deduction cannot consume interest when salary is below the cap.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T01",
+        "T05",
+        "T06",
+        "T09"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "OLD",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "0.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "600000.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G15",
+      "title": "Interest only with no salary",
+      "purpose": "No salary standard deduction. FD interest does not qualify for 80TTA.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T01",
+        "T05",
+        "T06",
+        "T09"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "OLD",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "0.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "11000.00",
+        "eligible_bank_fd": "0.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G16",
+      "title": "Savings interest 80TTA",
+      "purpose": "Under-60 savings interest; deduction capped at eligible interest.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T07",
+        "T05",
+        "T06"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "OLD",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "600000.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "15000.00",
+        "eligible_bank_fd": "50000.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G17",
+      "title": "Savings and FD split",
+      "purpose": "Only eligible savings interest enters 80TTA, not FD interest.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T07",
+        "T05",
+        "T06",
+        "T09"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "1965-07-15",
+      "regime": "OLD",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "0.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "15000.00",
+        "eligible_bank_fd": "60000.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G18",
+      "title": "Turns 60 during FY",
+      "purpose": "Resident senior; aggregate savings plus qualifying FD for 80TTB.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T08",
+        "T04",
+        "T05",
+        "T06"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "1966-04-01",
+      "regime": "OLD",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "0.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "600000.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G19",
+      "title": "60th birthday on next 1 April",
+      "purpose": "For FY 2025-26, test preceding-day attainment on 31 March 2026.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T04",
+        "T08",
+        "T05",
+        "T06"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "1966-04-02",
+      "regime": "OLD",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "0.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "600000.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G20",
+      "title": "60th birthday on next 2 April",
+      "purpose": "Pair with G19; does not attain 60 by 31 March 2026.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T04",
+        "T07",
+        "T05",
+        "T06"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "1946-04-01",
+      "regime": "OLD",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "0.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "600000.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G21",
+      "title": "80th birthday on next 1 April",
+      "purpose": "Resident very senior old-regime basic exemption boundary.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T04",
+        "T08",
+        "T05",
+        "T06"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "1946-04-02",
+      "regime": "OLD",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "0.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "600000.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G22",
+      "title": "80th birthday on next 2 April",
+      "purpose": "Pair with G21; still senior rather than very senior in this FY.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T04",
+        "T08",
+        "T05",
+        "T06"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "NEW",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "40000.00"
+        },
+        {
+          "id": "EMPLOYER_2",
+          "gross_salary_before_standard_deduction": "600000.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "0.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G23",
+      "title": "Two employers",
+      "purpose": "Sum gross salary before applying one annual standard deduction.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T01",
+        "T05",
+        "T06",
+        "T09"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "NEW",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "5075000.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "0.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G24",
+      "title": "Gross salary above 50 lakh, total at cap",
+      "purpose": "Gross salary 5075000 becomes total income 5000000 under this scoped new-regime example. Gross is not the ITR limit.",
+      "review_kind": "ARITHMETIC",
+      "source_ids": [
+        "T10",
+        "T11",
+        "T09"
+      ],
+      "engineering_expectation": "Calculate within stated scope; no filing-ready claim."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "NEW",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "5075010.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "0.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G25",
+      "title": "Total income above supported cap",
+      "purpose": "Total 5000010 exceeds the supported ordinary-rate range. No surcharge-free complete result.",
+      "review_kind": "CONTROL",
+      "source_ids": [
+        "T10",
+        "T11"
+      ],
+      "engineering_expectation": "UNSUPPORTED; do not return a complete tax amount."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "RNOR",
+      "dob": "2000-10-15",
+      "regime": "NEW",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "900000.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "0.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G26",
+      "title": "RNOR is outside starter scope",
+      "purpose": "Do not equate resident with resident ordinarily resident.",
+      "review_kind": "CONTROL",
+      "source_ids": [
+        "T10",
+        "T11",
+        "T13"
+      ],
+      "engineering_expectation": "UNSUPPORTED; no automatic final tax."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "NEW",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "900000.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "0.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": true,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G27",
+      "title": "Capital gain inside possible ITR-1 allowance",
+      "purpose": "A form may legally accept limited 112A income while this starter engine does not calculate it.",
+      "review_kind": "CONTROL",
+      "source_ids": [
+        "T10",
+        "T11"
+      ],
+      "engineering_expectation": "PRODUCT_SCOPE_UNSUPPORTED; do not assert ITR-1 legally ineligible.",
+      "unmodelled_income": {
+        "type": "112A_LTCG",
+        "amount": "5000.00"
+      }
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "NEW",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "900000.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "0.00",
+        "eligible_bank_fd": "0.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": true,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G28",
+      "title": "Company director exclusion",
+      "purpose": "Separate a legal form exclusion from product arithmetic support.",
+      "review_kind": "CONTROL",
+      "source_ids": [
+        "T10",
+        "T11"
+      ],
+      "engineering_expectation": "ITR1_INELIGIBLE; no filing-ready result."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "NEW",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "900000.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": null,
+        "eligible_bank_fd": null,
+        "nonqualifying_deposit": null
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "UNKNOWN",
+        "deductions": "CONFIRMED"
+      },
+      "deductions": {
+        "80C": "0.00",
+        "80D": "0.00",
+        "80CCD_1B": "0.00"
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "UNKNOWN",
+      "deduction_inventory_complete": true,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G29",
+      "title": "Unknown interest amount",
+      "purpose": "Unknown interest cannot become confirmed zero.",
+      "review_kind": "CONTROL",
+      "source_ids": [
+        "T01",
+        "T05",
+        "T06",
+        "T09"
+      ],
+      "engineering_expectation": "INFORMATION_REQUIRED; optional explicit hypothetical only, no final tax."
+    },
+    {
+      "period": {
+        "act": "ITA_1961",
+        "income_fy": "2025-26",
+        "assessment_year": "2026-27",
+        "tax_year": null
+      },
+      "taxpayer_type": "INDIVIDUAL",
+      "residency": "ROR",
+      "dob": "2000-10-15",
+      "regime": "BOTH",
+      "salary_by_employer": [
+        {
+          "id": "EMPLOYER_1",
+          "gross_salary_before_standard_deduction": "2000000.00"
+        }
+      ],
+      "interest": {
+        "eligible_savings": "5000.00",
+        "eligible_bank_fd": "0.00",
+        "nonqualifying_deposit": "0.00"
+      },
+      "fact_status": {
+        "salary": "CONFIRMED",
+        "interest": "CONFIRMED",
+        "deductions": "UNKNOWN"
+      },
+      "deductions": {
+        "80C": null,
+        "80D": null,
+        "80CCD_1B": null
+      },
+      "screening": {
+        "business_income": false,
+        "capital_gains": false,
+        "house_property_income": false,
+        "family_pension": false,
+        "foreign_income": false,
+        "foreign_assets": false,
+        "foreign_signing_authority": false,
+        "company_director": false,
+        "unlisted_equity": false,
+        "deferred_esop_tax": false,
+        "tds_194N": false,
+        "brought_forward_losses": false,
+        "carry_forward_losses": false,
+        "vda_income": false,
+        "lottery_or_special_rate_income": false,
+        "agricultural_income": false,
+        "salary_exemptions_or_professional_tax": false,
+        "employer_nps_deduction": false,
+        "other_unmodelled_income_or_deduction": false
+      },
+      "income_completeness": "CONFIRMED",
+      "deduction_inventory_complete": false,
+      "tds_advance_tax_and_filing_interest": "NOT_IN_THIS_ARITHMETIC_CASE",
+      "expected": {
+        "rounded_total_income": null,
+        "slab_tax": null,
+        "rebate": null,
+        "marginal_relief": null,
+        "cess": null,
+        "annual_tax_before_credits": null,
+        "workflow_result": null
+      },
+      "review": {
+        "method": null,
+        "evidence_id": null,
+        "reference_version": null,
+        "reviewer": null,
+        "reviewed_on": null,
+        "decision": "PENDING"
+      },
+      "case_id": "G30",
+      "title": "Old deduction inventory incomplete",
+      "purpose": "A comparison using incomplete old deductions cannot state a definitive best regime or guaranteed saving.",
+      "review_kind": "CONTROL",
+      "source_ids": [
+        "T01",
+        "T05",
+        "T06",
+        "T09"
+      ],
+      "engineering_expectation": "PROVISIONAL comparison only; suppress definitive recommendation and saving."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startup_http_groups": 49,
+  "failures": 0,
+  "errors": 0,
+  "jar_sha256": "3c6fe5361f3ba61c9f73d05b130f7cb7bfa0df0b3a861a5f2d538a8f704b3688",
+  "real_http": true,
+  "restart_recovery_exercised": true,
+  "browser_transaction_flow_tested": false,
+  "mysql_profile_exercised": false,
+  "skipped": 0,
+  "production_ready": false
+}

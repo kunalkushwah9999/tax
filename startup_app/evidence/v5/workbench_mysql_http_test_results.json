@@ -1,0 +1,14 @@
+{
+  "workbench_http_groups": 24,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "jar_sha256": "1548c778417a554434b1ea467c6cea162787f398e75ca2d7742838391e841feb",
+  "storage_profile": "mysql",
+  "real_http": true,
+  "synthetic_data_only": true,
+  "independent_tax_approval": false,
+  "source_inputs": {
+    "test_workbench.py": "55eaf398faccf1b2ed5265a7f8e74c08c96b1f4d2fde80f5cbbd5750957cc130"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "native_process_fault_groups": 4,
+  "production_ready": false,
+  "actual_child_processes": true,
+  "controlled_worker_fixtures": true,
+  "schema_correctness_tested_by_this_suite": false,
+  "jar_sha256": "1913ca1bef605df9483c13e7aada6edc77833bafaf84c2139222fe783f631e77"
+}

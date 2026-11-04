@@ -1,0 +1,15 @@
+{
+  "operations_tool_groups": 13,
+  "failures": 0,
+  "errors": 0,
+  "actual_tls_java_probes": true,
+  "actual_android_sdk_build": false,
+  "actual_cloud_deployment": false,
+  "production_ready": false,
+  "runtime_jar_sha256": "2149851f938c3f3c643208a6403b2d7fa93b2769421642f9490f5c00463de8cf",
+  "sources": {
+    "verify_site.py": "3658a6a81267f830be9fc9a8ee432ee374203cc1b6bc843f1c9f253601ec4e85",
+    "android_build.py": "1a5663ac734d39287574f10ec05c199783bd2f743faa4188afccf6b26f27351a",
+    "test_operations.py": "43e156ad52fbae4208f470e559f9a56a3a54f02649a47e6a7bd3180ce766563d"
+  }
+}

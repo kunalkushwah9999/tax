@@ -1,0 +1,10 @@
+{
+  "actual_mysql": true,
+  "production_recovery_approved": false,
+  "restore_stays_isolated": true,
+  "restored_full_state_equal": true,
+  "framed_backup_larger_than_16mib": true,
+  "concurrent_restore_groups": 10,
+  "jar_sha256": "3c6fe5361f3ba61c9f73d05b130f7cb7bfa0df0b3a861a5f2d538a8f704b3688",
+  "executed_in_release": "4.0.0"
+}

@@ -1,0 +1,61 @@
+{
+  "browser_checks_passed": 31,
+  "checks": [
+    "landing and keyboard sign-in focus",
+    "customer registration through browser",
+    "create and reopen saved draft",
+    "amount proposal and separate confirmation",
+    "profile save retains explicit review intent",
+    "source CSV comparison renders gross and TDS separately",
+    "ITR scope declarations save without releasing tax",
+    "optional native ITR check produces masked proposals",
+    "native category replacement remains estimated",
+    "GST worksheet comparison keeps eligibility undetermined",
+    "capital ledger import shows FIFO allocations with no taxable gain",
+    "capital bookkeeping review is separate and displays reviewed difference",
+    "negative sub-rupee book difference keeps its sign",
+    "TDS comparison renders mismatch without claiming credit",
+    "TDS mismatch review records follow-up without erasing mismatch",
+    "notice draft saves user-stated dates and renders markup as text",
+    "notice receipt remains a user report and does not become verified filing",
+    "working-paper download preserves private records without tax authority",
+    "structured feedback is saved with safe text rendering",
+    "signed TEST expert request grants scoped review",
+    "test checkout order through browser preserves frozen price",
+    "provider webhook reconciles paid access in browser",
+    "paid preparation bundle downloads without filing authority",
+    "desktop layout and screenshot",
+    "preparer accepts test review and reads shared case only",
+    "admin triages feedback through browser",
+    "admin test plan publication and aggregate feedback signals",
+    "customer sees triage reply after new sign-in",
+    "390px mobile viewport authenticated navigation and layout",
+    "390px capital and notice workbench layout remains usable",
+    "logout removes authenticated workspace"
+  ],
+  "js_errors": [],
+  "observed_api_errors": [
+    {
+      "path": "/api/cases",
+      "status": 401
+    }
+  ],
+  "browser_version": "156.0.8078.80",
+  "real_java_app": true,
+  "desktop_viewport": "1440x1000",
+  "mobile_viewport": "390x844",
+  "physical_mobile_device": false,
+  "full_accessibility_audit": false,
+  "real_payment_provider": false,
+  "real_ca_verification": false,
+  "production_ready": false,
+  "jar_sha256": "3c6fe5361f3ba61c9f73d05b130f7cb7bfa0df0b3a861a5f2d538a8f704b3688",
+  "browser_binary_sha256": "d34f5d1962280380a576c40cd50139f11d0ed0cfb17f69dad37e8cc8fd2b73fa",
+  "playwright_version": "1.62.1",
+  "storage_profile": "mysql-concurrent",
+  "test_sources": {
+    "test_browser.py": "e8c41818118b816837018f69025653028cec1e242152a1ddc7c8b42889e3b820",
+    "browser_checks.mjs": "3c032433fcaec9e0c0ac692873fad3e4290d5c02dd832e9a272cf89781212abf",
+    "test_operations.py": "9fa297982f9e1e4225f67286ac372cda47177075a2bd587d1c5232c55d876720"
+  }
+}

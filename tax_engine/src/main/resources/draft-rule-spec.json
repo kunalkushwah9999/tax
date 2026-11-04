@@ -1,0 +1,27 @@
+{
+  "schema": "draft-planner-rules.v1",
+  "period": "ITA1961-FY2025-26-AY2026-27",
+  "status": "DRAFT_NOT_APPROVED",
+  "reviewed_sources_on": "2026-11-01",
+  "new_slabs": [["0","400000","0"],["400000","800000","0.05"],["800000","1200000","0.10"],["1200000","1600000","0.15"],["1600000","2000000","0.20"],["2000000","2400000","0.25"],["2400000",null,"0.30"]],
+  "salary_deduction_caps": {"NEW":"75000","OLD":"50000"},
+  "old_exemption_limits": {"UNDER_60":"250000","SENIOR":"300000","SUPER_SENIOR":"500000"},
+  "old_deduction_caps": {"80C":"150000","80D_precomputed_eligible_aggregate_max":"100000","80CCD_1B":"50000","80TTA":"10000","80TTB":"50000"},
+  "rebate": {"NEW":{"income_limit":"1200000","rebate_cap":"60000","marginal_relief":true},"OLD":{"income_limit":"500000","rebate_cap":"12500","marginal_relief":false}},
+  "cess_rate":"0.04",
+  "income_cap_per_regime_after_rounding":"5000000",
+  "arithmetic_contract":"annual_tax_before_credits is exact tax after rebate/relief plus cess; ZERO_CREDIT_ROUNDED_WORKING is a separate 288B illustration and is not a payable/refund",
+  "eligibility_contract":"80C, 80D and 80CCD(1B) inputs are already eligible, distinct amounts; eligibility, payment restrictions and no double claims require separate evidence; 80D is not computed from premiums",
+  "rounding_contract":"ignore paise first, then nearest ten whole rupees, last digit five rounds upward",
+  "age_contract":"FY-end age band includes next 1 April birthday per CBDT Circular 28/2016; adult throughout FY only",
+  "release_requirements":["independent expected stages","qualified review of law and eligibility","authoritative signed rule publication","supported original-backend integration"],
+  "sources":[
+    "https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1?mobile-app=1",
+    "https://www.incometaxindia.gov.in/w/section-288a-62",
+    "https://www.incometaxindia.gov.in/w/section-288b-58",
+    "https://www.incometaxindia.gov.in/w/section-80tta-12",
+    "https://wmstatic-prd.incometaxindia.gov.in/web/guest/w/section-80ttb-5",
+    "https://wmstatic-prd.incometaxindia.gov.in/hi/web/guest/w/section-20-111",
+    "https://incometaxindia.gov.in/communications/circular/cirularno282016.pdf"
+  ]
+}

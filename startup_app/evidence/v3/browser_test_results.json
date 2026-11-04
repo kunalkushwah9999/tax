@@ -1,0 +1,52 @@
+{
+  "browser_checks_passed": 22,
+  "checks": [
+    "landing and keyboard sign-in focus",
+    "customer registration through browser",
+    "create and reopen saved draft",
+    "amount proposal and separate confirmation",
+    "profile save retains explicit review intent",
+    "source CSV comparison renders gross and TDS separately",
+    "ITR scope declarations save without releasing tax",
+    "optional native ITR check produces masked proposals",
+    "native category replacement remains estimated",
+    "GST worksheet comparison keeps eligibility undetermined",
+    "structured feedback is saved with safe text rendering",
+    "signed TEST expert request grants scoped review",
+    "test checkout order through browser preserves frozen price",
+    "provider webhook reconciles paid access in browser",
+    "paid preparation bundle downloads without filing authority",
+    "desktop layout and screenshot",
+    "preparer accepts test review and reads shared case only",
+    "admin triages feedback through browser",
+    "admin test plan publication and aggregate feedback signals",
+    "customer sees triage reply after new sign-in",
+    "390px mobile viewport authenticated navigation and layout",
+    "logout removes authenticated workspace"
+  ],
+  "js_errors": [],
+  "observed_api_errors": [
+    {
+      "path": "/api/cases",
+      "status": 401
+    }
+  ],
+  "browser_version": "156.0.8078.80",
+  "real_java_app": true,
+  "desktop_viewport": "1440x1000",
+  "mobile_viewport": "390x844",
+  "physical_mobile_device": false,
+  "full_accessibility_audit": false,
+  "real_payment_provider": false,
+  "real_ca_verification": false,
+  "production_ready": false,
+  "jar_sha256": "1913ca1bef605df9483c13e7aada6edc77833bafaf84c2139222fe783f631e77",
+  "browser_binary_sha256": "d34f5d1962280380a576c40cd50139f11d0ed0cfb17f69dad37e8cc8fd2b73fa",
+  "playwright_version": "1.62.1",
+  "storage_profile": "mysql-concurrent",
+  "test_sources": {
+    "test_browser.py": "3229611a84f184564002c92e616a6f64140cdd555fe5f50368773bbe8c328056",
+    "browser_checks.mjs": "aa75d0cc20dc1501ccf8ce386a6f981b1da3148ec93dd1428a3fc1bdea4bd5ea",
+    "test_operations.py": "3e3128592c0f326fac36642bc41bd3334579019c09ed63eff66aac5a62ba8d48"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "reviewed_on": "2026-10-31",
+  "inputs": [
+    {
+      "file": "Pasted text.txt",
+      "bytes": 784199,
+      "lines": 15126,
+      "sha256": "e5f061cc861e2b8e1d7cce0546f0991f35b7d293ae8e2c16d68c3b95e0540c8d"
+    },
+    {
+      "file": "Pasted text (2).txt",
+      "bytes": 848307,
+      "lines": 15667,
+      "sha256": "72d95280ee5b22a70582377f390eb6ba3d86f8d44f3654daf041c3434bbf4144"
+    }
+  ],
+  "method": "Whole-file text comparison/indexing plus targeted review of source fragments, consolidated decisions and contradictions.",
+  "limitations": "This records source identity and review provenance; it does not claim that all statements are correct or all code was recovered/executed."
+}

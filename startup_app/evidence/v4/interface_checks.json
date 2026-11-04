@@ -1,0 +1,20 @@
+{
+  "version": "4.0.0",
+  "javascript_syntax_checked": true,
+  "authenticated_browser_flows_tested": true,
+  "browser_storage_profile": "mysql-concurrent",
+  "browser_checks_passed": 31,
+  "desktop_and_mobile_views_visually_inspected": true,
+  "mobile_viewport_tested": true,
+  "physical_mobile_device_tested": false,
+  "safari_webkit_tested": false,
+  "accessibility_audit": false,
+  "assets_sha256": {
+    "app.js": "6a1850a7b1118ba5536c7f998009a307e7679e7918ea70add0e6f89a0630132e",
+    "index.html": "8a4c66dac1a060e2b75c6816323178a47b40a1ca8e20acb16ca9b7106a3036ff",
+    "styles.css": "71854d41325c76be683e672df55f5b9a81190a948d171addc090f4bf868ea35f",
+    "workbench.js": "27ced650d5df4d80130465ebd3bd5e7989af3450f627d7eb70e1abc8a997813f"
+  },
+  "jar_sha256": "3c6fe5361f3ba61c9f73d05b130f7cb7bfa0df0b3a861a5f2d538a8f704b3688",
+  "production_ready": false
+}

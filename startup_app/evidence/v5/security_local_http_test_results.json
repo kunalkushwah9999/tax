@@ -1,0 +1,15 @@
+{
+  "security_http_groups": 25,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 1,
+  "storage_profile": "local",
+  "independent_python_totp": true,
+  "two_process_sql_tested": false,
+  "jar_sha256": "1548c778417a554434b1ea467c6cea162787f398e75ca2d7742838391e841feb",
+  "source_inputs": {
+    "test_security.py": "8b74172f14b605d0bdd8b01284580b42e35895881224db6812dd6cda8298e214"
+  },
+  "conformance_certification": false,
+  "production_ready": false
+}

@@ -1,0 +1,12 @@
+{
+  "mysql_profile": {
+    "tested_server_series": "8.4 LTS",
+    "jdbc_version": "26.10.0",
+    "jdbc_sha256": "cef70caf532833c9ab8f41f74773ce22c08bf503fad215c9c2ee1e9db87e759e",
+    "jdbc_url": "https://repo.maven.apache.org/maven2/com/mysql/mysql-connector-j/26.10.0/mysql-connector-j-26.10.0.jar",
+    "vendor_docs": "https://dev.mysql.com/doc/connector-j/en/",
+    "server_binary_bundled": false,
+    "jdbc_binary_bundled": false,
+    "upgrade_requires_review_and_retest": true
+  }
+}

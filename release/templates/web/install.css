@@ -1,0 +1,1 @@
+.install-bar{position:fixed;bottom:1rem;right:1rem;max-width:calc(100vw - 2rem);background:#fff;padding:.8rem;border:1px solid #c8d8d1;border-radius:1rem;box-shadow:0 4px 24px #123e3520;z-index:1200;display:flex;gap:.5rem;flex-wrap:wrap}.install-bar[hidden]{display:none}

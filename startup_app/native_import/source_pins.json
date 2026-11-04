@@ -1,0 +1,31 @@
+{
+  "format": "taxdesk-native-sources.v1",
+  "schema_id": "ITR1-AY2026-27-20260630-V1.1",
+  "assessment_year": "2026-27",
+  "schema": {
+    "name": "itr1_schema.json",
+    "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-06/ITR-1_2026_Main_V1.1.json",
+    "sha256": "6a0ef9f64065431879dcc724869d8455a640bcf11279d1818eb19f11448ce763",
+    "bytes": 148921
+  },
+  "business_validation_reference": {
+    "name": "itr1_validations.pdf",
+    "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT_e-Filing_ITR%201_Validation%20Rules_AY%202026-27.pdf",
+    "sha256": "fd0e447af6c0a6ed43c29697722c4d469f42d5e7a0bad54e21bd4600803a100a",
+    "bytes": 555796,
+    "rules_executed": false
+  },
+  "gst_native": {
+    "status": "UNRELEASED_PRIMARY_SCHEMA_UNAVAILABLE",
+    "observed_http_status": 403,
+    "source": "https://developer.gst.gov.in/apiportal/taxpayer/returns"
+  },
+  "packages": {
+    "jsonschema": "4.26.0",
+    "attrs": "26.1.0",
+    "jsonschema-specifications": "2025.9.1",
+    "referencing": "0.37.0",
+    "rpds-py": "2026.9.1",
+    "typing-extensions": "4.16.0"
+  }
+}

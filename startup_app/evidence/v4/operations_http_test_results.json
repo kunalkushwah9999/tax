@@ -1,0 +1,13 @@
+{
+  "operations_http_groups": 36,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "real_app_http": true,
+  "payment_provider": "EXPLICIT_LOOPBACK_TEST_FIXTURE",
+  "real_charges_tested": false,
+  "professional_credentials": "SIGNED_TEST_ATTESTATIONS_NOT_ICAI",
+  "mysql_profile_exercised": false,
+  "production_ready": false,
+  "jar_sha256": "3c6fe5361f3ba61c9f73d05b130f7cb7bfa0df0b3a861a5f2d538a8f704b3688"
+}

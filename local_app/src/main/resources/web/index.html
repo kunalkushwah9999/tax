@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tax Planner — Sample Preparation Workspace</title>
+  <meta name="description" content="A local sample preparation workflow with explicit confirmation and clear validation status.">
+  <link rel="stylesheet" href="/styles.css"><script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="Tax Planner home"><span class="brand-mark">tp</span><span>Tax Planner<small>SAMPLE WORKSPACE</small></span></a>
+      <nav aria-label="Workspace">
+        <button type="button" class="nav-item active" data-tab="prepare" aria-current="page"><span class="nav-symbol">01</span> Prepare inputs</button>
+        <button type="button" class="nav-item" data-tab="review"><span class="nav-symbol">02</span> Review checkpoints</button>
+        <button type="button" class="nav-item" data-tab="reconciliation"><span class="nav-symbol">03</span> Compare statements</button>
+        <button type="button" class="nav-item" data-tab="analysis"><span class="nav-symbol">03</span> Calculation check</button>
+        <button type="button" class="nav-item" data-tab="validation"><span class="nav-symbol">03</span> Validation status</button>
+        <button type="button" class="nav-item" data-tab="history"><span class="nav-symbol">04</span> Change history</button>
+      </nav>
+      <div class="sidebar-note"><span class="tiny-label">A CLEARER NEXT STEP</span><p>Prepare carefully.<br>Confirm explicitly.<br>Know what is ready.</p></div>
+      <div class="sidebar-foot">Local sample workspace<br><span>English · INR inputs</span></div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar"><span class="workspace-label">Your workspace <span class="slash">/</span> <strong id="page-breadcrumb">Prepare inputs</strong></span><div class="top-actions"><span class="session-chip"><span class="status-dot"></span> Temporary session</span><button type="button" class="quiet-button" id="refresh-button">Refresh</button><button type="button" class="quiet-button" id="restart-button">Restart sample</button></div></header>
+      <main>
+        <div class="demo-banner"><span class="banner-label">SAMPLE WORKFLOW</span><span>Use sample amounts. Tax calculation and filing are unavailable until independently validated.</span></div>
+        <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+        <div id="pending-banner" class="pending-banner" role="alert" hidden><span>The response was interrupted. Retry the same request to check its outcome safely.</span><button type="button" class="button small" id="retry-button">Retry same request</button></div>
+        <section id="session-ended" class="empty-state" hidden><span class="eyebrow">TEMPORARY WORKSPACE</span><h1>Start a fresh sample.</h1><p>Your earlier session is no longer available. Sample inputs are not saved for later.</p><button type="button" class="button" id="start-button">Start sample session</button></section>
+        <div id="workspace-content">
+          <div class="page-title"><div><span class="eyebrow" id="page-eyebrow">STEP 01 · INPUT PREPARATION</span><h1 id="page-heading">Prepare with clarity.</h1><p id="page-description">Enter an amount, check the proposal, then confirm it.</p></div><button type="button" class="secondary-button" id="sample-button">Use sample amounts <span aria-hidden="true">↗</span></button></div>
+          <div class="workspace-grid">
+            <div class="primary-column">
+              <section id="panel-prepare" class="tab-panel" aria-label="Prepare inputs">
+                <div class="section-heading"><h2>Annual income inputs</h2><span class="subtle">Sample scenario · salary + separated interest</span></div>
+                <div id="input-cards" class="input-grid"></div>
+                <div class="info-line"><span class="info-mark" aria-hidden="true">i</span><p>Missing is different from zero. Use an explicit zero when that is the sample value you intend.</p></div>
+              </section>
+              <section id="panel-review" class="tab-panel" aria-label="Review checkpoints" hidden>
+                <div class="section-heading"><h2>Review the checkpoints</h2><span class="subtle">Confirm income before reviewing</span></div>
+                <div class="checkpoint-list" id="review-cards"></div>
+                <div class="info-line"><span class="info-mark" aria-hidden="true">i</span><p>These sample review flags do not establish deduction eligibility, tax correctness or filing readiness.</p></div>
+              </section>
+              <section id="panel-reconciliation" class="tab-panel" aria-label="Compare statements" hidden>
+                <div class="section-heading"><h2>Compare normalized sample entries</h2><button type="button" class="secondary-button" id="comparison-sample">Load sample comparison</button></div>
+                <div class="planner-profile"><label class="csv-label" for="comparison-csv">Normalized CSV · synthetic aliases and amounts only</label><textarea id="comparison-csv" rows="8" maxlength="32768" spellcheck="false" placeholder="Paste the documented normalized columns, or load the sample."></textarea><p class="comparison-help">Source labels are declarations. This does not parse native AIS/26AS/PDF files, authenticate statements or submit AIS feedback. Use UNKNOWN for missing amounts; zero must be explicit.</p><button type="button" class="button" id="comparison-import">Compare entries</button></div>
+                <div id="comparison-pending" class="pending-banner" role="alert" hidden><span>The response was interrupted. Retry the exact same comparison action to check its outcome.</span><button type="button" class="button small" id="comparison-retry">Retry same action</button></div>
+                <p id="comparison-summary" class="comparison-help" aria-live="polite">Comparison is separate from your income draft. No automatic totals or tax credits are applied.</p><div id="comparison-groups" class="comparison-groups"></div>
+                <details class="preparation-note"><summary>Local comparison change history</summary><ol id="comparison-events" class="comparison-events"></ol></details>
+                <div class="info-line"><span class="info-mark" aria-hidden="true">i</span><p>Choosing an observation records your local review only. Gross income and TDS checks stay separate. It changes no confirmed income, source record, tax credit or filing status.</p></div>
+              </section>
+              <section id="panel-analysis" class="tab-panel" aria-label="Calculation check" hidden>
+                <div class="section-heading"><h2>Check your prepared scenario</h2><span class="subtle">Uses the current confirmed income inputs</span></div>
+                <form id="analysis-form" class="planner-profile" autocomplete="off">
+                  <div class="profile-grid">
+                    <label>Income period<select name="period" id="plan-period"><option value="ITA1961-FY2025-26-AY2026-27">FY 2025–26 · AY 2026–27</option><option value="ITA2025-TY2026-27">TY 2026–27 · not implemented</option></select></label>
+                    <label>Sample date of birth<input type="date" name="dob" id="plan-dob" min="1906-04-01" max="2025-04-01"></label>
+                    <label>Residential status<select name="residency" id="plan-residency"><option value="UNKNOWN">Select status</option><option value="ROR">Resident and ordinarily resident</option><option value="RNOR">Resident but not ordinarily resident</option><option value="NR">Non-resident</option></select></label>
+                    <label>Scenario to check<select name="regimes" id="plan-regimes"><option value="BOTH">Both regimes</option><option value="NEW">New regime only</option><option value="OLD">Old regime only</option></select></label>
+                  </div>
+                  <fieldset class="profile-section"><legend>Confirm the starter scope</legend><p>Answer each group. A “Yes” routes this scenario outside the current starter; an unanswered group stays incomplete. This does not determine which ITR form you may use.</p>
+                    <div id="scope-questions" class="scope-questions"></div>
+                  </fieldset>
+                  <label class="check-label"><input type="checkbox" id="profile-confirmed">I have checked the sample date of birth, residential status and screening answers.</label>
+                  <fieldset class="profile-section"><legend>Eligible old-regime deduction amounts</legend><p>Enter already eligible INR amounts, including explicit zero. These are not total premiums or payments. Check payment conditions, family/parent limits and evidence separately. Keep NPS claims distinct; the same contribution cannot be claimed twice.</p>
+                    <div class="profile-grid deduction-grid"><label>Eligible section 80C amount<input name="eligible_80c" id="plan-80c" type="text" inputmode="decimal" maxlength="16" placeholder="e.g. 100000.00"></label><label>Eligible section 80D amount<input name="eligible_80d" id="plan-80d" type="text" inputmode="decimal" maxlength="16" placeholder="e.g. 0.00"></label><label>Eligible section 80CCD(1B) amount<input name="eligible_nps" id="plan-nps" type="text" inputmode="decimal" maxlength="16" placeholder="e.g. 0.00"></label></div>
+                    <label class="check-label"><input type="checkbox" id="eligible-confirmed">I have checked these eligible amounts and that the claims are distinct.</label>
+                  </fieldset>
+                  <div class="analysis-submit"><button type="submit" class="button" id="analysis-button">Check scenario</button><span>Tax values stay unavailable until independent validation.</span></div>
+                </form>
+                <div id="analysis-results" class="analysis-results" aria-live="polite" hidden></div>
+                <div class="info-line"><span class="info-mark" aria-hidden="true">i</span><p>The check covers salary plus separated interest and the listed eligible deductions. Credits, refunds, interest/fees, filing and other income schedules need separate implementation and validation.</p></div>
+              </section>
+              <section id="panel-validation" class="tab-panel" aria-label="Validation status" hidden>
+                <div class="validation-card"><span class="eyebrow">RESULT CHECK</span><h2 id="result-heading">A checked tax result is not available yet.</h2><p id="result-message">You can finish the sample preparation flow while tax rules and independent reference validation remain pending.</p><div class="validation-points"><div><span class="neutral-dot"></span> Tax rules awaiting approval</div><div><span class="neutral-dot"></span> Independent reference outputs awaiting approval</div><div><span class="neutral-dot"></span> Filing and ITR export unavailable</div></div><button type="button" class="button" id="result-button">Check result status <span aria-hidden="true">→</span></button></div>
+                <div class="professional-note"><div><span class="tiny-label">PROFESSIONAL WORKSPACE</span><h3>Separate access. Explicit review.</h3><p>The professional workspace is not released in this local sample. Client preparation never records a CA approval.</p></div><span class="outline-chip">Not available</span></div>
+              </section>
+              <section id="panel-history" class="tab-panel" aria-label="Change history" hidden>
+                <div class="section-heading"><h2>Session change history</h2><span class="subtle">Amounts stay out of this history</span></div>
+                <div id="history-empty" class="history-empty"><h3>No changes yet.</h3><p>Your accepted edits and review changes will appear here.</p></div>
+                <div class="table-wrap" id="history-wrap" hidden><table><thead><tr><th>Change</th><th>Field</th><th>Time</th></tr></thead><tbody id="history-body"></tbody></table></div>
+                <div class="info-line"><span class="info-mark" aria-hidden="true">i</span><p>This is temporary session history. It is not a saved case or a professional audit record.</p></div>
+              </section>
+            </div>
+            <aside class="review-sidebar" aria-label="Preparation summary">
+              <section class="progress-card"><span class="tiny-label">YOUR PREPARATION</span><div class="progress-heading"><h2 id="progress-label">Opening sample…</h2><span id="progress-number" class="progress-number">—</span></div><progress id="preparation-progress" max="8" value="0" aria-label="Input review progress"></progress><p class="subtle">Income review progress, not an accuracy score. Profile screening is separate.</p><ol id="checklist" class="checklist"></ol></section>
+              <section class="next-card"><span class="tiny-label">YOUR NEXT STEP</span><h3 id="next-label">Open your sample session</h3><p id="next-help">Preparing your input checklist.</p><button type="button" id="next-button" class="text-button">Go to the next step <span aria-hidden="true">→</span></button></section>
+              <details class="preparation-note"><summary>View preparation note</summary><pre id="preparation-note-text"></pre></details>
+              <p class="storage-note">No PAN or document upload. Sample inputs are held only in this temporary session.</p>
+            </aside>
+          </div>
+        </div>
+        <footer>Tax Planner · Local sample application <span>Independent tax validation is still pending.</span></footer>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

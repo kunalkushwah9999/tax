@@ -1,0 +1,18 @@
+{
+  "native_worker_groups": 21,
+  "generated_rejections": 28,
+  "failures": 0,
+  "errors": 0,
+  "schema_sha256": "6a0ef9f64065431879dcc724869d8455a640bcf11279d1818eb19f11448ce763",
+  "worker_sha256": "30f22b417eaa2bcc5b5fae62b0bab0ef01c49e8d5c5c16b302cd4a8bb7a61844",
+  "actual_jsonschema_library": "4.26.0",
+  "independent_tax_approval": false,
+  "gst_native_released": false,
+  "inputs": {
+    "native_import/worker.py": "30f22b417eaa2bcc5b5fae62b0bab0ef01c49e8d5c5c16b302cd4a8bb7a61844",
+    "native_import/test_worker.py": "f2980f0380f020cccfcc419bebbd0d47e07445092aba66ff52a46c78f25126f8",
+    "native_import/source_pins.json": "91ad5404006b9a827504766c1437590f0e613b068a185371e7db3516ae6b8651",
+    "native_import/requirements.txt": "87ad101e30f6dd0eda02992ad57331511f4e279eb6eaadf0ba1d5814685d8cfa",
+    "src/main/resources/native/synthetic_itr1.json": "526a0e72ad6339348ccf21270a9a99405003d235eb058df247d09f3f3cd3fa16"
+  }
+}

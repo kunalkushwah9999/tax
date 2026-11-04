@@ -1,0 +1,69 @@
+{
+  "period": "ITA1961-FY2025-26-AY2026-27",
+  "taxpayer_type": "INDIVIDUAL",
+  "residency": "ROR",
+  "regime": "NEW",
+  "other_taxable_income": "800000.00",
+  "declarations": {
+    "all_accounts_complete": true,
+    "capital_investments_not_business": true,
+    "expenses_exclude_stt_and_are_transfer_only": true,
+    "no_corporate_actions_or_gifts": true,
+    "no_prior_year_losses": true,
+    "normalized_lot_values_checked": true,
+    "ordinary_exchange_acquisitions": true,
+    "ordinary_income_complete_after_deductions": true,
+    "synthetic_confirmed": true,
+    "no_clubbing_or_special_status": true,
+    "india_recognised_exchange_listed_equity_only": true,
+    "no_other_capital_transactions_or_exemptions": true,
+    "no_ifsc_or_special_stt_exceptions": true
+  },
+  "lots": [
+    {
+      "lot_id": "ST_UP",
+      "account_alias": "ACCOUNT_A",
+      "asset_alias": "ASSET_A",
+      "acquired_on": "2025-04-01",
+      "sold_on": "2025-06-02",
+      "acquisition_cost_excluding_stt": "300000.00",
+      "sale_consideration": "450000.00",
+      "transfer_expenses_excluding_stt": "500.00",
+      "stt_on_acquisition": "YES",
+      "stt_on_transfer": "YES",
+      "fmv_for_lot_2018_01_31": "UNKNOWN",
+      "listed_on_2018_01_31": false,
+      "asset_type": "INDIA_LISTED_EQUITY_SHARE"
+    },
+    {
+      "lot_id": "ST_DOWN",
+      "account_alias": "ACCOUNT_A",
+      "asset_alias": "ASSET_A",
+      "acquired_on": "2025-04-01",
+      "sold_on": "2025-06-02",
+      "acquisition_cost_excluding_stt": "200000.00",
+      "sale_consideration": "150000.00",
+      "transfer_expenses_excluding_stt": "500.00",
+      "stt_on_acquisition": "YES",
+      "stt_on_transfer": "YES",
+      "fmv_for_lot_2018_01_31": "UNKNOWN",
+      "listed_on_2018_01_31": false,
+      "asset_type": "INDIA_LISTED_EQUITY_SHARE"
+    },
+    {
+      "lot_id": "LT_OLD",
+      "account_alias": "ACCOUNT_A",
+      "asset_alias": "ASSET_A",
+      "acquired_on": "2017-01-10",
+      "sold_on": "2025-06-02",
+      "acquisition_cost_excluding_stt": "100000.00",
+      "sale_consideration": "600000.00",
+      "transfer_expenses_excluding_stt": "1000.00",
+      "stt_on_acquisition": "YES",
+      "stt_on_transfer": "YES",
+      "fmv_for_lot_2018_01_31": "250000.00",
+      "listed_on_2018_01_31": true,
+      "asset_type": "INDIA_LISTED_EQUITY_SHARE"
+    }
+  ]
+}

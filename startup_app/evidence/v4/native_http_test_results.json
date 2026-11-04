@@ -1,0 +1,12 @@
+{
+  "native_http_groups": 20,
+  "failures": 0,
+  "errors": 0,
+  "actual_java_python_worker": true,
+  "mysql_profile_exercised": false,
+  "jar_sha256": "3c6fe5361f3ba61c9f73d05b130f7cb7bfa0df0b3a861a5f2d538a8f704b3688",
+  "worker_sha256": "30f22b417eaa2bcc5b5fae62b0bab0ef01c49e8d5c5c16b302cd4a8bb7a61844",
+  "schema_sha256": "6a0ef9f64065431879dcc724869d8455a640bcf11279d1818eb19f11448ce763",
+  "browser_ui_tested": false,
+  "independent_tax_approval": false
+}

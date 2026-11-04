@@ -1,0 +1,752 @@
+{
+  "corpus": "LISTED_EQUITY_ADDITIONAL_REVIEW_CASES_V0",
+  "independent_approved_case_count": 0,
+  "original_salary_interest_corpus_case_count": 30,
+  "original_approved_case_count": 0,
+  "cases": [
+    {
+      "case_id": "CG01",
+      "title": "Short gain and transfer expenses",
+      "input": {
+        "period": "ITA1961-FY2025-26-AY2026-27",
+        "taxpayer_type": "INDIVIDUAL",
+        "residency": "ROR",
+        "regime": "NEW",
+        "other_taxable_income": "800000.00",
+        "declarations": {
+          "all_accounts_complete": true,
+          "capital_investments_not_business": true,
+          "expenses_exclude_stt_and_are_transfer_only": true,
+          "no_corporate_actions_or_gifts": true,
+          "no_prior_year_losses": true,
+          "normalized_lot_values_checked": true,
+          "ordinary_exchange_acquisitions": true,
+          "ordinary_income_complete_after_deductions": true,
+          "synthetic_confirmed": true,
+          "no_clubbing_or_special_status": true,
+          "india_recognised_exchange_listed_equity_only": true,
+          "no_other_capital_transactions_or_exemptions": true,
+          "no_ifsc_or_special_stt_exceptions": true
+        },
+        "lots": [
+          {
+            "lot_id": "LOT_A",
+            "account_alias": "ACCOUNT_A",
+            "asset_alias": "ASSET_A",
+            "acquired_on": "2025-04-01",
+            "sold_on": "2025-06-02",
+            "acquisition_cost_excluding_stt": "100000.00",
+            "sale_consideration": "200000.00",
+            "transfer_expenses_excluding_stt": "1000.00",
+            "stt_on_acquisition": "YES",
+            "stt_on_transfer": "YES",
+            "fmv_for_lot_2018_01_31": "UNKNOWN",
+            "listed_on_2018_01_31": false,
+            "asset_type": "INDIA_LISTED_EQUITY_SHARE"
+          }
+        ]
+      },
+      "independent_expected": {
+        "workflow_status": null,
+        "lot_classification": null,
+        "cost_bases": null,
+        "loss_setoff": null,
+        "tax_components_before_annual_adjustments": null
+      },
+      "review": {
+        "decision": "PENDING",
+        "reviewer": null,
+        "reference_utility_version": null,
+        "evidence_id": null,
+        "reviewed_on": null
+      }
+    },
+    {
+      "case_id": "CG02",
+      "title": "Long gain below annual band",
+      "input": {
+        "period": "ITA1961-FY2025-26-AY2026-27",
+        "taxpayer_type": "INDIVIDUAL",
+        "residency": "ROR",
+        "regime": "NEW",
+        "other_taxable_income": "800000.00",
+        "declarations": {
+          "all_accounts_complete": true,
+          "capital_investments_not_business": true,
+          "expenses_exclude_stt_and_are_transfer_only": true,
+          "no_corporate_actions_or_gifts": true,
+          "no_prior_year_losses": true,
+          "normalized_lot_values_checked": true,
+          "ordinary_exchange_acquisitions": true,
+          "ordinary_income_complete_after_deductions": true,
+          "synthetic_confirmed": true,
+          "no_clubbing_or_special_status": true,
+          "india_recognised_exchange_listed_equity_only": true,
+          "no_other_capital_transactions_or_exemptions": true,
+          "no_ifsc_or_special_stt_exceptions": true
+        },
+        "lots": [
+          {
+            "lot_id": "LOT_A",
+            "account_alias": "ACCOUNT_A",
+            "asset_alias": "ASSET_A",
+            "acquired_on": "2024-04-01",
+            "sold_on": "2025-06-02",
+            "acquisition_cost_excluding_stt": "100000.00",
+            "sale_consideration": "200000.00",
+            "transfer_expenses_excluding_stt": "0.00",
+            "stt_on_acquisition": "YES",
+            "stt_on_transfer": "YES",
+            "fmv_for_lot_2018_01_31": "UNKNOWN",
+            "listed_on_2018_01_31": false,
+            "asset_type": "INDIA_LISTED_EQUITY_SHARE"
+          }
+        ]
+      },
+      "independent_expected": {
+        "workflow_status": null,
+        "lot_classification": null,
+        "cost_bases": null,
+        "loss_setoff": null,
+        "tax_components_before_annual_adjustments": null
+      },
+      "review": {
+        "decision": "PENDING",
+        "reviewer": null,
+        "reference_utility_version": null,
+        "evidence_id": null,
+        "reviewed_on": null
+      }
+    },
+    {
+      "case_id": "CG03",
+      "title": "One rupee above long annual band",
+      "input": {
+        "period": "ITA1961-FY2025-26-AY2026-27",
+        "taxpayer_type": "INDIVIDUAL",
+        "residency": "ROR",
+        "regime": "NEW",
+        "other_taxable_income": "800000.00",
+        "declarations": {
+          "all_accounts_complete": true,
+          "capital_investments_not_business": true,
+          "expenses_exclude_stt_and_are_transfer_only": true,
+          "no_corporate_actions_or_gifts": true,
+          "no_prior_year_losses": true,
+          "normalized_lot_values_checked": true,
+          "ordinary_exchange_acquisitions": true,
+          "ordinary_income_complete_after_deductions": true,
+          "synthetic_confirmed": true,
+          "no_clubbing_or_special_status": true,
+          "india_recognised_exchange_listed_equity_only": true,
+          "no_other_capital_transactions_or_exemptions": true,
+          "no_ifsc_or_special_stt_exceptions": true
+        },
+        "lots": [
+          {
+            "lot_id": "LOT_A",
+            "account_alias": "ACCOUNT_A",
+            "asset_alias": "ASSET_A",
+            "acquired_on": "2024-04-01",
+            "sold_on": "2025-06-02",
+            "acquisition_cost_excluding_stt": "0.00",
+            "sale_consideration": "125001.00",
+            "transfer_expenses_excluding_stt": "0.00",
+            "stt_on_acquisition": "YES",
+            "stt_on_transfer": "YES",
+            "fmv_for_lot_2018_01_31": "UNKNOWN",
+            "listed_on_2018_01_31": false,
+            "asset_type": "INDIA_LISTED_EQUITY_SHARE"
+          }
+        ]
+      },
+      "independent_expected": {
+        "workflow_status": null,
+        "lot_classification": null,
+        "cost_bases": null,
+        "loss_setoff": null,
+        "tax_components_before_annual_adjustments": null
+      },
+      "review": {
+        "decision": "PENDING",
+        "reviewer": null,
+        "reference_utility_version": null,
+        "evidence_id": null,
+        "reviewed_on": null
+      }
+    },
+    {
+      "case_id": "CG04",
+      "title": "Annual band shared across accounts",
+      "input": {
+        "period": "ITA1961-FY2025-26-AY2026-27",
+        "taxpayer_type": "INDIVIDUAL",
+        "residency": "ROR",
+        "regime": "NEW",
+        "other_taxable_income": "800000.00",
+        "declarations": {
+          "all_accounts_complete": true,
+          "capital_investments_not_business": true,
+          "expenses_exclude_stt_and_are_transfer_only": true,
+          "no_corporate_actions_or_gifts": true,
+          "no_prior_year_losses": true,
+          "normalized_lot_values_checked": true,
+          "ordinary_exchange_acquisitions": true,
+          "ordinary_income_complete_after_deductions": true,
+          "synthetic_confirmed": true,
+          "no_clubbing_or_special_status": true,
+          "india_recognised_exchange_listed_equity_only": true,
+          "no_other_capital_transactions_or_exemptions": true,
+          "no_ifsc_or_special_stt_exceptions": true
+        },
+        "lots": [
+          {
+            "lot_id": "LOT_A",
+            "account_alias": "ACCOUNT_A",
+            "asset_alias": "ASSET_A",
+            "acquired_on": "2024-04-01",
+            "sold_on": "2025-06-02",
+            "acquisition_cost_excluding_stt": "100000.00",
+            "sale_consideration": "200000.00",
+            "transfer_expenses_excluding_stt": "0.00",
+            "stt_on_acquisition": "YES",
+            "stt_on_transfer": "YES",
+            "fmv_for_lot_2018_01_31": "UNKNOWN",
+            "listed_on_2018_01_31": false,
+            "asset_type": "INDIA_LISTED_EQUITY_SHARE"
+          },
+          {
+            "lot_id": "LOT_B",
+            "account_alias": "ACCOUNT_B",
+            "asset_alias": "ASSET_A",
+            "acquired_on": "2024-04-01",
+            "sold_on": "2025-06-02",
+            "acquisition_cost_excluding_stt": "100000.00",
+            "sale_consideration": "200000.00",
+            "transfer_expenses_excluding_stt": "0.00",
+            "stt_on_acquisition": "YES",
+            "stt_on_transfer": "YES",
+            "fmv_for_lot_2018_01_31": "UNKNOWN",
+            "listed_on_2018_01_31": false,
+            "asset_type": "INDIA_LISTED_EQUITY_SHARE"
+          }
+        ]
+      },
+      "independent_expected": {
+        "workflow_status": null,
+        "lot_classification": null,
+        "cost_bases": null,
+        "loss_setoff": null,
+        "tax_components_before_annual_adjustments": null
+      },
+      "review": {
+        "decision": "PENDING",
+        "reviewer": null,
+        "reference_utility_version": null,
+        "evidence_id": null,
+        "reviewed_on": null
+      }
+    },
+    {
+      "case_id": "CG05",
+      "title": "Short loss against short then long",
+      "input": {
+        "period": "ITA1961-FY2025-26-AY2026-27",
+        "taxpayer_type": "INDIVIDUAL",
+        "residency": "ROR",
+        "regime": "NEW",
+        "other_taxable_income": "800000.00",
+        "declarations": {
+          "all_accounts_complete": true,
+          "capital_investments_not_business": true,
+          "expenses_exclude_stt_and_are_transfer_only": true,
+          "no_corporate_actions_or_gifts": true,
+          "no_prior_year_losses": true,
+          "normalized_lot_values_checked": true,
+          "ordinary_exchange_acquisitions": true,
+          "ordinary_income_complete_after_deductions": true,
+          "synthetic_confirmed": true,
+          "no_clubbing_or_special_status": true,
+          "india_recognised_exchange_listed_equity_only": true,
+          "no_other_capital_transactions_or_exemptions": true,
+          "no_ifsc_or_special_stt_exceptions": true
+        },
+        "lots": [
+          {
+            "lot_id": "ST_GAIN",
+            "account_alias": "ACCOUNT_A",
+            "asset_alias": "ASSET_A",
+            "acquired_on": "2025-04-01",
+            "sold_on": "2025-06-02",
+            "acquisition_cost_excluding_stt": "100000.00",
+            "sale_consideration": "140000.00",
+            "transfer_expenses_excluding_stt": "0.00",
+            "stt_on_acquisition": "YES",
+            "stt_on_transfer": "YES",
+            "fmv_for_lot_2018_01_31": "UNKNOWN",
+            "listed_on_2018_01_31": false,
+            "asset_type": "INDIA_LISTED_EQUITY_SHARE"
+          },
+          {
+            "lot_id": "ST_LOSS",
+            "account_alias": "ACCOUNT_A",
+            "asset_alias": "ASSET_A",
+            "acquired_on": "2025-04-01",
+            "sold_on": "2025-06-02",
+            "acquisition_cost_excluding_stt": "200000.00",
+            "sale_consideration": "100000.00",
+            "transfer_expenses_excluding_stt": "0.00",
+            "stt_on_acquisition": "YES",
+            "stt_on_transfer": "YES",
+            "fmv_for_lot_2018_01_31": "UNKNOWN",
+            "listed_on_2018_01_31": false,
+            "asset_type": "INDIA_LISTED_EQUITY_SHARE"
+          },
+          {
+            "lot_id": "LT_GAIN",
+            "account_alias": "ACCOUNT_A",
+            "asset_alias": "ASSET_A",
+            "acquired_on": "2024-04-01",
+            "sold_on": "2025-06-02",
+            "acquisition_cost_excluding_stt": "100000.00",
+            "sale_consideration": "300000.00",
+            "transfer_expenses_excluding_stt": "0.00",
+            "stt_on_acquisition": "YES",
+            "stt_on_transfer": "YES",
+            "fmv_for_lot_2018_01_31": "UNKNOWN",
+            "listed_on_2018_01_31": false,
+            "asset_type": "INDIA_LISTED_EQUITY_SHARE"
+          }
+        ]
+      },
+      "independent_expected": {
+        "workflow_status": null,
+        "lot_classification": null,
+        "cost_bases": null,
+        "loss_setoff": null,
+        "tax_components_before_annual_adjustments": null
+      },
+      "review": {
+        "decision": "PENDING",
+        "reviewer": null,
+        "reference_utility_version": null,
+        "evidence_id": null,
+        "reviewed_on": null
+      }
+    },
+    {
+      "case_id": "CG06",
+      "title": "Long loss must not reduce short gain",
+      "input": {
+        "period": "ITA1961-FY2025-26-AY2026-27",
+        "taxpayer_type": "INDIVIDUAL",
+        "residency": "ROR",
+        "regime": "NEW",
+        "other_taxable_income": "800000.00",
+        "declarations": {
+          "all_accounts_complete": true,
+          "capital_investments_not_business": true,
+          "expenses_exclude_stt_and_are_transfer_only": true,
+          "no_corporate_actions_or_gifts": true,
+          "no_prior_year_losses": true,
+          "normalized_lot_values_checked": true,
+          "ordinary_exchange_acquisitions": true,
+          "ordinary_income_complete_after_deductions": true,
+          "synthetic_confirmed": true,
+          "no_clubbing_or_special_status": true,
+          "india_recognised_exchange_listed_equity_only": true,
+          "no_other_capital_transactions_or_exemptions": true,
+          "no_ifsc_or_special_stt_exceptions": true
+        },
+        "lots": [
+          {
+            "lot_id": "ST_GAIN",
+            "account_alias": "ACCOUNT_A",
+            "asset_alias": "ASSET_A",
+            "acquired_on": "2025-04-01",
+            "sold_on": "2025-06-02",
+            "acquisition_cost_excluding_stt": "100000.00",
+            "sale_consideration": "200000.00",
+            "transfer_expenses_excluding_stt": "0.00",
+            "stt_on_acquisition": "YES",
+            "stt_on_transfer": "YES",
+            "fmv_for_lot_2018_01_31": "UNKNOWN",
+            "listed_on_2018_01_31": false,
+            "asset_type": "INDIA_LISTED_EQUITY_SHARE"
+          },
+          {
+            "lot_id": "LT_LOSS",
+            "account_alias": "ACCOUNT_A",
+            "asset_alias": "ASSET_A",
+            "acquired_on": "2024-04-01",
+            "sold_on": "2025-06-02",
+            "acquisition_cost_excluding_stt": "200000.00",
+            "sale_consideration": "100000.00",
+            "transfer_expenses_excluding_stt": "0.00",
+            "stt_on_acquisition": "YES",
+            "stt_on_transfer": "YES",
+            "fmv_for_lot_2018_01_31": "UNKNOWN",
+            "listed_on_2018_01_31": false,
+            "asset_type": "INDIA_LISTED_EQUITY_SHARE"
+          }
+        ]
+      },
+      "independent_expected": {
+        "workflow_status": null,
+        "lot_classification": null,
+        "cost_bases": null,
+        "loss_setoff": null,
+        "tax_components_before_annual_adjustments": null
+      },
+      "review": {
+        "decision": "PENDING",
+        "reviewer": null,
+        "reference_utility_version": null,
+        "evidence_id": null,
+        "reviewed_on": null
+      }
+    },
+    {
+      "case_id": "CG07",
+      "title": "Pre2018 actual cost greater than FMV and consideration",
+      "input": {
+        "period": "ITA1961-FY2025-26-AY2026-27",
+        "taxpayer_type": "INDIVIDUAL",
+        "residency": "ROR",
+        "regime": "NEW",
+        "other_taxable_income": "800000.00",
+        "declarations": {
+          "all_accounts_complete": true,
+          "capital_investments_not_business": true,
+          "expenses_exclude_stt_and_are_transfer_only": true,
+          "no_corporate_actions_or_gifts": true,
+          "no_prior_year_losses": true,
+          "normalized_lot_values_checked": true,
+          "ordinary_exchange_acquisitions": true,
+          "ordinary_income_complete_after_deductions": true,
+          "synthetic_confirmed": true,
+          "no_clubbing_or_special_status": true,
+          "india_recognised_exchange_listed_equity_only": true,
+          "no_other_capital_transactions_or_exemptions": true,
+          "no_ifsc_or_special_stt_exceptions": true
+        },
+        "lots": [
+          {
+            "lot_id": "LOT_A",
+            "account_alias": "ACCOUNT_A",
+            "asset_alias": "ASSET_A",
+            "acquired_on": "2017-01-10",
+            "sold_on": "2025-06-02",
+            "acquisition_cost_excluding_stt": "400000.00",
+            "sale_consideration": "300000.00",
+            "transfer_expenses_excluding_stt": "0.00",
+            "stt_on_acquisition": "YES",
+            "stt_on_transfer": "YES",
+            "fmv_for_lot_2018_01_31": "200000.00",
+            "listed_on_2018_01_31": true,
+            "asset_type": "INDIA_LISTED_EQUITY_SHARE"
+          }
+        ]
+      },
+      "independent_expected": {
+        "workflow_status": null,
+        "lot_classification": null,
+        "cost_bases": null,
+        "loss_setoff": null,
+        "tax_components_before_annual_adjustments": null
+      },
+      "review": {
+        "decision": "PENDING",
+        "reviewer": null,
+        "reference_utility_version": null,
+        "evidence_id": null,
+        "reviewed_on": null
+      }
+    },
+    {
+      "case_id": "CG08",
+      "title": "Pre2018 FMV capped by consideration",
+      "input": {
+        "period": "ITA1961-FY2025-26-AY2026-27",
+        "taxpayer_type": "INDIVIDUAL",
+        "residency": "ROR",
+        "regime": "NEW",
+        "other_taxable_income": "800000.00",
+        "declarations": {
+          "all_accounts_complete": true,
+          "capital_investments_not_business": true,
+          "expenses_exclude_stt_and_are_transfer_only": true,
+          "no_corporate_actions_or_gifts": true,
+          "no_prior_year_losses": true,
+          "normalized_lot_values_checked": true,
+          "ordinary_exchange_acquisitions": true,
+          "ordinary_income_complete_after_deductions": true,
+          "synthetic_confirmed": true,
+          "no_clubbing_or_special_status": true,
+          "india_recognised_exchange_listed_equity_only": true,
+          "no_other_capital_transactions_or_exemptions": true,
+          "no_ifsc_or_special_stt_exceptions": true
+        },
+        "lots": [
+          {
+            "lot_id": "LOT_A",
+            "account_alias": "ACCOUNT_A",
+            "asset_alias": "ASSET_A",
+            "acquired_on": "2017-01-10",
+            "sold_on": "2025-06-02",
+            "acquisition_cost_excluding_stt": "100000.00",
+            "sale_consideration": "300000.00",
+            "transfer_expenses_excluding_stt": "0.00",
+            "stt_on_acquisition": "YES",
+            "stt_on_transfer": "YES",
+            "fmv_for_lot_2018_01_31": "400000.00",
+            "listed_on_2018_01_31": true,
+            "asset_type": "INDIA_LISTED_EQUITY_SHARE"
+          }
+        ]
+      },
+      "independent_expected": {
+        "workflow_status": null,
+        "lot_classification": null,
+        "cost_bases": null,
+        "loss_setoff": null,
+        "tax_components_before_annual_adjustments": null
+      },
+      "review": {
+        "decision": "PENDING",
+        "reviewer": null,
+        "reference_utility_version": null,
+        "evidence_id": null,
+        "reviewed_on": null
+      }
+    },
+    {
+      "case_id": "CG09",
+      "title": "Exact holding anniversary needs date-convention review",
+      "input": {
+        "period": "ITA1961-FY2025-26-AY2026-27",
+        "taxpayer_type": "INDIVIDUAL",
+        "residency": "ROR",
+        "regime": "NEW",
+        "other_taxable_income": "800000.00",
+        "declarations": {
+          "all_accounts_complete": true,
+          "capital_investments_not_business": true,
+          "expenses_exclude_stt_and_are_transfer_only": true,
+          "no_corporate_actions_or_gifts": true,
+          "no_prior_year_losses": true,
+          "normalized_lot_values_checked": true,
+          "ordinary_exchange_acquisitions": true,
+          "ordinary_income_complete_after_deductions": true,
+          "synthetic_confirmed": true,
+          "no_clubbing_or_special_status": true,
+          "india_recognised_exchange_listed_equity_only": true,
+          "no_other_capital_transactions_or_exemptions": true,
+          "no_ifsc_or_special_stt_exceptions": true
+        },
+        "lots": [
+          {
+            "lot_id": "LOT_A",
+            "account_alias": "ACCOUNT_A",
+            "asset_alias": "ASSET_A",
+            "acquired_on": "2024-06-02",
+            "sold_on": "2025-06-02",
+            "acquisition_cost_excluding_stt": "100000.00",
+            "sale_consideration": "200000.00",
+            "transfer_expenses_excluding_stt": "0.00",
+            "stt_on_acquisition": "YES",
+            "stt_on_transfer": "YES",
+            "fmv_for_lot_2018_01_31": "UNKNOWN",
+            "listed_on_2018_01_31": false,
+            "asset_type": "INDIA_LISTED_EQUITY_SHARE"
+          }
+        ]
+      },
+      "independent_expected": {
+        "workflow_status": null,
+        "lot_classification": null,
+        "cost_bases": null,
+        "loss_setoff": null,
+        "tax_components_before_annual_adjustments": null
+      },
+      "review": {
+        "decision": "PENDING",
+        "reviewer": null,
+        "reference_utility_version": null,
+        "evidence_id": null,
+        "reviewed_on": null
+      }
+    },
+    {
+      "case_id": "CG10",
+      "title": "Unused basic exemption outside module scope",
+      "input": {
+        "period": "ITA1961-FY2025-26-AY2026-27",
+        "taxpayer_type": "INDIVIDUAL",
+        "residency": "ROR",
+        "regime": "NEW",
+        "other_taxable_income": "399999.99",
+        "declarations": {
+          "all_accounts_complete": true,
+          "capital_investments_not_business": true,
+          "expenses_exclude_stt_and_are_transfer_only": true,
+          "no_corporate_actions_or_gifts": true,
+          "no_prior_year_losses": true,
+          "normalized_lot_values_checked": true,
+          "ordinary_exchange_acquisitions": true,
+          "ordinary_income_complete_after_deductions": true,
+          "synthetic_confirmed": true,
+          "no_clubbing_or_special_status": true,
+          "india_recognised_exchange_listed_equity_only": true,
+          "no_other_capital_transactions_or_exemptions": true,
+          "no_ifsc_or_special_stt_exceptions": true
+        },
+        "lots": [
+          {
+            "lot_id": "LOT_A",
+            "account_alias": "ACCOUNT_A",
+            "asset_alias": "ASSET_A",
+            "acquired_on": "2025-04-01",
+            "sold_on": "2025-06-02",
+            "acquisition_cost_excluding_stt": "100000.00",
+            "sale_consideration": "200000.00",
+            "transfer_expenses_excluding_stt": "0.00",
+            "stt_on_acquisition": "YES",
+            "stt_on_transfer": "YES",
+            "fmv_for_lot_2018_01_31": "UNKNOWN",
+            "listed_on_2018_01_31": false,
+            "asset_type": "INDIA_LISTED_EQUITY_SHARE"
+          }
+        ]
+      },
+      "independent_expected": {
+        "workflow_status": null,
+        "lot_classification": null,
+        "cost_bases": null,
+        "loss_setoff": null,
+        "tax_components_before_annual_adjustments": null
+      },
+      "review": {
+        "decision": "PENDING",
+        "reviewer": null,
+        "reference_utility_version": null,
+        "evidence_id": null,
+        "reviewed_on": null
+      }
+    },
+    {
+      "case_id": "CG11",
+      "title": "Unknown FMV suppresses complete totals",
+      "input": {
+        "period": "ITA1961-FY2025-26-AY2026-27",
+        "taxpayer_type": "INDIVIDUAL",
+        "residency": "ROR",
+        "regime": "NEW",
+        "other_taxable_income": "800000.00",
+        "declarations": {
+          "all_accounts_complete": true,
+          "capital_investments_not_business": true,
+          "expenses_exclude_stt_and_are_transfer_only": true,
+          "no_corporate_actions_or_gifts": true,
+          "no_prior_year_losses": true,
+          "normalized_lot_values_checked": true,
+          "ordinary_exchange_acquisitions": true,
+          "ordinary_income_complete_after_deductions": true,
+          "synthetic_confirmed": true,
+          "no_clubbing_or_special_status": true,
+          "india_recognised_exchange_listed_equity_only": true,
+          "no_other_capital_transactions_or_exemptions": true,
+          "no_ifsc_or_special_stt_exceptions": true
+        },
+        "lots": [
+          {
+            "lot_id": "LOT_A",
+            "account_alias": "ACCOUNT_A",
+            "asset_alias": "ASSET_A",
+            "acquired_on": "2017-01-10",
+            "sold_on": "2025-06-02",
+            "acquisition_cost_excluding_stt": "100000.00",
+            "sale_consideration": "200000.00",
+            "transfer_expenses_excluding_stt": "0.00",
+            "stt_on_acquisition": "YES",
+            "stt_on_transfer": "YES",
+            "fmv_for_lot_2018_01_31": "UNKNOWN",
+            "listed_on_2018_01_31": false,
+            "asset_type": "INDIA_LISTED_EQUITY_SHARE"
+          }
+        ]
+      },
+      "independent_expected": {
+        "workflow_status": null,
+        "lot_classification": null,
+        "cost_bases": null,
+        "loss_setoff": null,
+        "tax_components_before_annual_adjustments": null
+      },
+      "review": {
+        "decision": "PENDING",
+        "reviewer": null,
+        "reference_utility_version": null,
+        "evidence_id": null,
+        "reviewed_on": null
+      }
+    },
+    {
+      "case_id": "CG12",
+      "title": "Unknown transfer STT suppresses complete totals",
+      "input": {
+        "period": "ITA1961-FY2025-26-AY2026-27",
+        "taxpayer_type": "INDIVIDUAL",
+        "residency": "ROR",
+        "regime": "NEW",
+        "other_taxable_income": "800000.00",
+        "declarations": {
+          "all_accounts_complete": true,
+          "capital_investments_not_business": true,
+          "expenses_exclude_stt_and_are_transfer_only": true,
+          "no_corporate_actions_or_gifts": true,
+          "no_prior_year_losses": true,
+          "normalized_lot_values_checked": true,
+          "ordinary_exchange_acquisitions": true,
+          "ordinary_income_complete_after_deductions": true,
+          "synthetic_confirmed": true,
+          "no_clubbing_or_special_status": true,
+          "india_recognised_exchange_listed_equity_only": true,
+          "no_other_capital_transactions_or_exemptions": true,
+          "no_ifsc_or_special_stt_exceptions": true
+        },
+        "lots": [
+          {
+            "lot_id": "LOT_A",
+            "account_alias": "ACCOUNT_A",
+            "asset_alias": "ASSET_A",
+            "acquired_on": "2025-04-01",
+            "sold_on": "2025-06-02",
+            "acquisition_cost_excluding_stt": "100000.00",
+            "sale_consideration": "200000.00",
+            "transfer_expenses_excluding_stt": "0.00",
+            "stt_on_acquisition": "YES",
+            "stt_on_transfer": "UNKNOWN",
+            "fmv_for_lot_2018_01_31": "UNKNOWN",
+            "listed_on_2018_01_31": false,
+            "asset_type": "INDIA_LISTED_EQUITY_SHARE"
+          }
+        ]
+      },
+      "independent_expected": {
+        "workflow_status": null,
+        "lot_classification": null,
+        "cost_bases": null,
+        "loss_setoff": null,
+        "tax_components_before_annual_adjustments": null
+      },
+      "review": {
+        "decision": "PENDING",
+        "reviewer": null,
+        "reference_utility_version": null,
+        "evidence_id": null,
+        "reviewed_on": null
+      }
+    }
+  ]
+}
